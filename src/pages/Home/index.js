@@ -132,10 +132,10 @@ const Home = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Cody Bennett | Designer + Developer</title>
+        <title>Tanisha Darshani | Fashion Designer</title>
         <meta
           name="description"
-          content="Portfolio of Cody Jason Bennett – a creative designer & developer with a focus on motion and user experience."
+          content="Portfolio of Tanisha Darshani – a Fashion Designer & Entrepreneur with a focus on attension to detail and perfection."
         />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />

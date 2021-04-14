@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://codyb.co",
-  "description": "Portfolio site for Cody Bennett",
-  "repository": "https://github.com/CodyJasonBennett/portfolio.git",
-  "author": "Cody Bennett <hi@codyb.co>",
+  "homepage": "https://tanishadarshani.netlify.app",
+  "description": "Portfolio site for Tanisha Darshani",
+  "repository": "https://github.com/Tanishadarshani/portfolio.git",
+  "author": "Tanisha Darshani + Sushil Buragute",
   "license": "MIT",
   "private": true,
   "devDependencies": {
@@ -72,5 +72,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://codyb.co"
+  "proxy": "https://tanishadarshani.netlify.app"
 }

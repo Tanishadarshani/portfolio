@@ -58,7 +58,7 @@ function Navbar(props) {
       <RouterLink
         className="navbar__logo"
         to={{ pathname: '/', hash: '#intro', state: hashKey }}
-        aria-label="Cody Bennett, Designer & Developer"
+        aria-label="Tanisha Darshani, Fashion Designer & Entrepeneur"
         onClick={handleMobileNavClick}
         onMouseUp={blurOnMouseUp}
       >
