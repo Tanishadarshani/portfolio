@@ -138,7 +138,7 @@ const Home = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Hamish Williams | Designer + Developer</title>
+        <title>Tanisha Darshani | Fashion Designer</title>
         <meta
           name="description"
           content="Portfolio of Hamish Williams – a digital designer working on web &amp; mobile
