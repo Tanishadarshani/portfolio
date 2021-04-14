@@ -11,8 +11,9 @@ import { Route, Switch, Link as RouterLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Post from 'pages/Post';
 import Image from 'components/Image';
-import { useScrollRestore } from 'hooks';
 import Section from 'components/Section';
+import Footer from 'components/Footer';
+import { useScrollRestore } from 'hooks';
 import fetchPosts from 'posts';
 import './index.css';
 
@@ -49,8 +50,8 @@ const ArticlesPost = ({
           <Image
             play={hovered}
             className="articles__post-image"
-            src={banner ? require(`posts/assets/${banner}`).default : undefined}
-            placeholder={require(`posts/assets/${bannerPlaceholder}`).default}
+            src={banner ? require(`posts/assets/${banner}`) : undefined}
+            placeholder={require(`posts/assets/${bannerPlaceholder}`)}
             alt={bannerAlt}
           />
           <div className="articles__post-image-tag">K256</div>
@@ -77,7 +78,7 @@ const Articles = () => {
   return (
     <div className="articles">
       <Helmet>
-        <title>{`Articles | Hamish Williams Designer`}</title>
+        <title>Articles | Cody Bennett</title>
         <meta
           name="description"
           content="A collection of technical design and development articles."
@@ -93,6 +94,7 @@ const Articles = () => {
           ))}
         </div>
       </Section>
+      <Footer />
     </div>
   );
 };
@@ -105,7 +107,12 @@ const ArticlesRouter = () => {
   useEffect(() => {
     const grabPosts = async () => {
       const postData = await Promise.all(fetchPosts);
-      setPosts(postData);
+
+      const posts = postData
+        .filter(({ draft }) => !draft)
+        .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+
+      setPosts(posts);
     };
 
     grabPosts();

@@ -4,7 +4,7 @@ import {
   LinearFilter,
   OrthographicCamera,
   Scene,
-  PlaneBufferGeometry,
+  PlaneGeometry,
   TextureLoader,
   ShaderMaterial,
   Mesh,
@@ -131,7 +131,7 @@ const Carousel = ({ width, height, images, placeholder, ...rest }) => {
         opacity: 1,
       });
 
-      geometry.current = new PlaneBufferGeometry(width, height, 1);
+      geometry.current = new PlaneGeometry(width, height, 1);
       imagePlane.current = new Mesh(geometry.current, material.current);
       imagePlane.current.position.set(0, 0, 0);
       scene.current.add(imagePlane.current);
@@ -234,19 +234,14 @@ const Carousel = ({ width, height, images, placeholder, ...rest }) => {
   }, []);
 
   useEffect(() => {
-    let animation;
-
-    const animate = () => {
-      animation = requestAnimationFrame(animate);
+    renderer.current.setAnimationLoop(() => {
       if (animating.current) {
         renderer.current.render(scene.current, camera.current);
       }
-    };
-
-    animation = requestAnimationFrame(animate);
+    });
 
     return () => {
-      cancelAnimationFrame(animation);
+      renderer.current.setAnimationLoop(null);
       springTween.current?.stop();
     };
   }, []);
@@ -261,9 +256,7 @@ const Carousel = ({ width, height, images, placeholder, ...rest }) => {
       placeholderElement.addEventListener('transitionend', purgePlaceholder);
 
       return () => {
-        if (placeholderElement) {
-          placeholderElement.removeEventListener('transitionend', purgePlaceholder);
-        }
+        placeholderElement?.removeEventListener('transitionend', purgePlaceholder);
       };
     }
   }, [placeholder]);

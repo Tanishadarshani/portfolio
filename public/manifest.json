@@ -1,11 +1,11 @@
 {
-  "short_name": "hamishw.com",
-  "name": "Design Portfolio of Hamish Williams",
+  "short_name": "codyb.co",
+  "name": "Cody Bennett",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon.svg",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
       "src": "icon-256.png",

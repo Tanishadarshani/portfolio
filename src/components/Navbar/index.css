@@ -1,5 +1,5 @@
 .navbar {
-  --headerNavFontSize: calc((16 / 16) * 1rem);
+  --navbarNavFontSize: calc((16 / 16) * 1rem);
 
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
 
   @media (--mediaMobile) {
     & {
-      --headerNavFontSize: calc((22 / 16) * 1rem);
+      --navbarNavFontSize: calc((22 / 16) * 1rem);
     }
   }
 
@@ -75,7 +75,7 @@
   padding: var(--spaceM);
   color: rgb(var(--rgbText) / 0.8);
   font-weight: var(--fontWeightMedium);
-  font-size: var(--headerNavFontSize);
+  font-size: var(--navbarNavFontSize);
   text-decoration: none;
   position: relative;
   transition: color var(--durationS) ease 0.1s;
@@ -220,7 +220,7 @@
 
 .navbar__mobile-nav-link {
   width: 100%;
-  font-size: var(--headerNavFontSize);
+  font-size: var(--navbarNavFontSize);
   text-align: center;
   text-decoration: none;
   color: var(--colorTextBody);
@@ -247,7 +247,7 @@
 
   @media (max-width: 400px), (max-height: 360px) {
     & {
-      --headerNavFontSize: calc((18 / 16) * 1rem);
+      --navbarNavFontSize: calc((18 / 16) * 1rem);
     }
   }
 

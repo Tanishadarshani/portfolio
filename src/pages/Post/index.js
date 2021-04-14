@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import classNames from 'classnames';
 import { Transition } from 'react-transition-group';
 import Footer from 'components/Footer';
@@ -10,22 +10,24 @@ import { Helmet } from 'react-helmet';
 import { MDXProvider } from '@mdx-js/react';
 import Link from 'components/Link';
 import Code from 'components/Code';
+import Section from 'components/Section';
+import Heading from 'components/Heading';
+import Text from 'components/Text';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import { media } from 'utils/style';
 import { ReactComponent as ArrowDown } from 'assets/arrow-down.svg';
 import { tokens } from 'components/ThemeProvider/theme';
-import Section from 'components/Section';
-import Heading from 'components/Heading';
-import Text from 'components/Text';
 import './index.css';
 
 const PostWrapper = ({
   children,
   title,
-  date,
   description,
+  slug,
+  date,
   banner,
+  bannerVideo,
   bannerPlaceholder,
   bannerAlt,
   readTime,
@@ -47,8 +49,9 @@ const PostWrapper = ({
   return (
     <article className="post">
       <Helmet>
-        <title>{`Articles | ${title}`}</title>
+        <title>Articles | {title}</title>
         <meta name="description" content={description} />
+        <meta property="og:type" content="article" />
       </Helmet>
       <header className="post__header">
         <div className="post__header-text">
@@ -105,8 +108,8 @@ const PostWrapper = ({
             reveal
             delay={600}
             className="post__banner-image"
-            src={banner ? require(`posts/assets/${banner}`).default : undefined}
-            placeholder={require(`posts/assets/${bannerPlaceholder}`).default}
+            src={banner ? require(`posts/assets/${banner}`) : undefined}
+            placeholder={require(`posts/assets/${bannerPlaceholder}`)}
             alt={bannerAlt}
           />
         </div>
@@ -131,38 +134,16 @@ const PostParagraph = ({ children, ...rest }) => (
   </Text>
 );
 
+const PostList = ({ children, ...rest }) => (
+  <PostParagraph {...rest}>
+    <ul>{children}</ul>
+  </PostParagraph>
+);
+
 const PostImage = ({ src, alt, ...rest }) => {
-  const [size, setSize] = useState();
-  const imgRef = useRef();
   const imgSrc = src.startsWith('http') ? src : require(`posts/assets/${src}`);
 
-  useEffect(() => {
-    const { width, height } = imgRef.current;
-
-    if (width && height) {
-      setSize({ width, height });
-    }
-  }, []);
-
-  const handleLoad = event => {
-    const { width, height } = event.target;
-    setSize({ width, height });
-  };
-
-  return (
-    <img
-      className="post__image"
-      ref={imgRef}
-      src={imgSrc}
-      onLoad={handleLoad}
-      loading="lazy"
-      decoding="async"
-      alt={alt}
-      width={size?.width}
-      height={size?.height}
-      {...rest}
-    />
-  );
+  return <Image className="post__image" src={imgSrc} alt={alt} {...rest} />;
 };
 
 const PostCode = ({ children, ...rest }) => (
@@ -180,6 +161,7 @@ const Post = ({ slug, content: PostContent, ...rest }) => {
         wrapper: PostWrapper,
         h2: PostHeadingTwo,
         p: PostParagraph,
+        ul: PostList,
         img: PostImage,
         a: PostLink,
         pre: Code,

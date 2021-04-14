@@ -127,9 +127,81 @@
   opacity: 1;
 }
 
+@keyframes image-reveal {
+  0% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: left;
+  }
+  49% {
+    transform: scale3d(1, 1, 1);
+    transform-origin: left;
+  }
+  50% {
+    transform: scale3d(1, 1, 1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scale3d(0, 1, 1);
+    transform-origin: right;
+  }
+}
+
 .profile__image-wrapper {
   position: relative;
-  width: 100%;
+  max-width: 100%;
+}
+
+.profile__image {
+  max-width: 100%;
+  width: 960px;
+  height: 560px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: rgb(var(--rgbAccent));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 1, 1);
+    transform-origin: left;
+    z-index: 16;
+  }
+
+  & .portrait__canvas {
+    opacity: 0;
+  }
+
+  @media (--mediaTablet) {
+    & {
+      width: 960px;
+      height: 1120px;
+    }
+  }
+
+  @media (--mediaMobile) {
+    & {
+      width: 480px;
+      height: 560px;
+    }
+  }
+}
+
+.profile__image--entered {
+  & .portrait__canvas {
+    animation: fade-in var(--durationM) ease var(--delay) forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+  }
+
+  @media (--mediaUseMotion) {
+    &::before {
+      animation: image-reveal 1.8s var(--bezierFastoutSlowin) var(--delay);
+      animation-iteration-count: 1;
+    }
+  }
 }
 
 .profile__svg {

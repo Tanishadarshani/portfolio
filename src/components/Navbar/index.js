@@ -31,12 +31,12 @@ const NavbarIcons = () => (
   </div>
 );
 
-function Header(props) {
+function Navbar(props) {
   const { menuOpen, dispatch } = useAppContext();
   const { location } = props;
   const [hashKey, setHashKey] = useState();
   const windowSize = useWindowSize();
-  const headerRef = useRef();
+  const navbarRef = useRef();
   const isMobile = windowSize.width <= media.mobile || windowSize.height <= 696;
 
   const handleNavClick = () => {
@@ -54,11 +54,11 @@ function Header(props) {
   };
 
   return (
-    <header className="navbar" ref={headerRef}>
+    <header className="navbar" ref={navbarRef}>
       <RouterLink
         className="navbar__logo"
         to={{ pathname: '/', hash: '#intro', state: hashKey }}
-        aria-label="Hamish Williams, Designer"
+        aria-label="Cody Bennett, Designer & Developer"
         onClick={handleMobileNavClick}
         onMouseUp={blurOnMouseUp}
       >
@@ -120,4 +120,4 @@ function Header(props) {
   );
 }
 
-export default memo(Header);
+export default memo(Navbar);

@@ -2,19 +2,19 @@ import { Suspense, lazy, useEffect, useState, Fragment } from 'react';
 import classNames from 'classnames';
 import { TransitionGroup, Transition } from 'react-transition-group';
 import DecoderText from 'components/DecoderText';
+import Heading from 'components/Heading';
+import Section from 'components/Section';
+import VisuallyHidden from 'components/VisuallyHidden';
+import { ReactComponent as ArrowDown } from 'assets/arrow-down.svg';
 import { useInterval, usePrevious, useWindowSize } from 'hooks';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import { media } from 'utils/style';
-import { ReactComponent as ArrowDown } from 'assets/arrow-down.svg';
 import { tokens } from 'components/ThemeProvider/theme';
-import Heading from 'components/Heading';
-import Section from 'components/Section';
 import { useTheme } from 'components/ThemeProvider';
-import VisuallyHidden from 'components/VisuallyHidden';
 import './Intro.css';
 
-const DisplacementSphere = lazy(() => import('pages/Home/DisplacementSphere'));
+const DisplacementSphere = lazy(() => import('components/DisplacementSphere'));
 
 function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) {
   const theme = useTheme();
@@ -73,7 +73,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                 className={classNames('intro__name', `intro__name--${status}`)}
                 id={titleId}
               >
-                <DecoderText text="Tanisha Darshani" start={!prerender} delay={300} />
+                <DecoderText text="Cody Bennett" start={!prerender} delay={300} />
               </h1>
               <Heading level={0} as="h2" className="intro__title">
                 <VisuallyHidden className="intro__title-label">{`Designer + ${introLabel}`}</VisuallyHidden>

@@ -14,7 +14,7 @@ import {
   PerspectiveCamera,
   Scene,
   WebGLRenderTarget,
-  PlaneBufferGeometry,
+  PlaneGeometry,
   MeshBasicMaterial,
   Mesh,
   OrthographicCamera,
@@ -43,7 +43,6 @@ const Model = ({
   show = true,
   showDelay = 0,
   cameraPosition = { x: 0, y: 0, z: 8 },
-  enableControls,
   style,
   className,
   alt,
@@ -101,7 +100,7 @@ const Model = ({
     const keyLight = new DirectionalLight(0xffffff, 1.1);
     const fillLight = new DirectionalLight(0xffffff, 0.8);
 
-    fillLight.position.set(-6, 2, 2);
+    fillLight.position.z = 2;
     keyLight.position.set(0.5, 0, 0.866);
     lights.current = [ambientLight, keyLight, fillLight];
     lights.current.forEach(light => scene.current.add(light));
@@ -128,9 +127,7 @@ const Model = ({
     renderTargetBlur.current.texture.generateMipmaps = false;
 
     // Make a plane and make it face up
-    const planeGeometry = new PlaneBufferGeometry(planeWidth, planeHeight).rotateX(
-      Math.PI / 2
-    );
+    const planeGeometry = new PlaneGeometry(planeWidth, planeHeight).rotateX(Math.PI / 2);
 
     const planeMaterial = new MeshBasicMaterial({
       map: renderTarget.current.texture,

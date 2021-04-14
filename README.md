@@ -1,31 +1,31 @@
-# Personal portfolio
+# Portfolio
 
-[![Site preview](/public/social-image.png)](https://hamishw.com)
+[![Site preview](/public/social-image.png)](https://codyb.co)
 
-A design portfolio to showcase a few projects. View the [live site](https://hamishw.com) or check out a live version of the [components storybook](https://storybook.hamishw.com).
+My personal portfolio to showcase a few projects. View the [live site](https://codyb.co) or check out a live version of the [components storybook](https://storybook.codyb.co).
 
 ## Install & run
 
-Make sure you have nodejs and npm installed. Install dependencies with:
+Make sure you have nodejs and yarn installed. Install dependencies with:
 
 ```bash
-npm
+yarn
 ```
 
 Once it's done start up a local server with:
 
 ```bash
-npm start
+yarn start
 ```
 
-To view the components storybook:
+To view the components and storybook:
 
 ```bash
-npm run storybook
+yarn storybook
 ```
 
-To create a production build:
+To run tests:
 
 ```bash
-npm run build
+yarn test
 ```

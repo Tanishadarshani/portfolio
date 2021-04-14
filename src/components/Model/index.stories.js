@@ -1,15 +1,12 @@
-import Model from 'components/Model/index';
+import Model from 'components/Model';
 import { StoryContainer } from '../../../.storybook/StoryContainer';
 import deviceModels from './deviceModels';
-import phoneTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import phoneTexture from 'assets/gamestack-login.jpg';
-import phoneTextureLarge from 'assets/gamestack-login-large.jpg';
-import phoneTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import phoneTexture2 from 'assets/gamestack-list.jpg';
-import phoneTexture2Large from 'assets/gamestack-list-large.jpg';
-import laptopTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import laptopTexture from 'assets/spr-lesson-builder-dark-large.jpg';
-import laptopTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+import phoneTexture from 'assets/device-models.jpg';
+import phoneTextureLarge from 'assets/device-models-large.jpg';
+import phoneTexturePlaceholder from 'assets/device-models-placeholder.jpg';
+import laptopTexture from 'assets/dtt.jpg';
+import laptopTextureLarge from 'assets/dtt-large.jpg';
+import laptopTexturePlaceholder from 'assets/dtt-placeholder.jpg';
 
 export default {
   title: 'Model',
@@ -37,9 +34,9 @@ export const phone = () => (
           ...deviceModels.phone,
           position: { x: 0.6, y: -0.8, z: 0.4 },
           texture: {
-            src: phoneTexture2,
-            srcSet: `${phoneTexture2} 800w, ${phoneTexture2Large} 1440w`,
-            placeholder: phoneTexture2Placeholder,
+            src: phoneTexture,
+            srcSet: `${phoneTexture} 800w, ${phoneTextureLarge} 1440w`,
+            placeholder: phoneTexturePlaceholder,
           },
         },
       ]}
@@ -52,7 +49,7 @@ export const laptop = () => (
     <Model
       style={modelStyle}
       cameraPosition={{ x: 0, y: 0, z: 8 }}
-      alt="Laptop model"
+      alt="Laptop Model"
       models={[
         {
           ...deviceModels.laptop,

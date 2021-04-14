@@ -8,13 +8,13 @@ import Divider from 'components/Divider';
 import { Button } from 'components/Button';
 import Section from 'components/Section';
 import Icon from 'components/Icon';
+import Heading from 'components/Heading';
+import Text from 'components/Text';
 import { useScrollRestore, useFormInput, useRouteTransition } from 'hooks';
 import { reflow, isVisible } from 'utils/transition';
 import prerender from 'utils/prerender';
 import { msToNum, numToPx, numToMs } from 'utils/style';
 import { tokens } from 'components/ThemeProvider/theme';
-import Heading from 'components/Heading';
-import Text from 'components/Text';
 import './index.css';
 
 const initDelay = tokens.base.durationS;
@@ -63,7 +63,7 @@ const Contact = () => {
       try {
         setSending(true);
 
-        const response = await fetch('https://api.hamishw.com/message', {
+        const response = await fetch('/api/message', {
           method: 'POST',
           mode: 'cors',
           headers: {
@@ -98,7 +98,7 @@ const Contact = () => {
   return (
     <Section className={classNames('contact', `contact--${status}`)}>
       <Helmet>
-        <title>Contact | Hamish Williams</title>
+        <title>Contact | Cody Bennett</title>
         <meta
           name="description"
           content="Send me a message if you’re interested in discussing a project or if you just want to say hi"
@@ -221,7 +221,7 @@ const Contact = () => {
                   )}
                   style={getDelay(tokens.base.durationXS)}
                 >
-                  I’ll get back to you within a couple days, sit tight
+                  I’ll get back to you within a couple days
                 </Text>
                 <Button
                   secondary

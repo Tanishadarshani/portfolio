@@ -5,33 +5,28 @@ import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import Navbar from 'components/Navbar';
 import ThemeProvider from 'components/ThemeProvider';
-import { tokens } from 'components/ThemeProvider/theme';
 import VisuallyHidden from 'components/VisuallyHidden';
-import { useLocalStorage } from 'hooks';
+import { tokens } from 'components/ThemeProvider/theme';
 import { msToNum } from 'utils/style';
+import { useLocalStorage } from 'hooks';
+import { initialState, reducer } from 'app/reducer';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
-import { initialState, reducer } from 'app/reducer';
 import './reset.css';
 import './index.css';
 
 const Home = lazy(() => import('pages/Home'));
 const Contact = lazy(() => import('pages/Contact'));
-const ProjectSPR = lazy(() => import('pages/SmartSparrow'));
-const ProjectSlice = lazy(() => import('pages/Slice'));
-const ProjectVolkihar = lazy(() => import('pages/VolkiharKnight'));
-// const Articles = lazy(() => import('pages/Articles'));
-const Page404 = lazy(() => import('pages/404'));
+const ProjectDM = lazy(() => import('pages/DeviceModels'));
+const ProjectDTT = lazy(() => import('pages/DevTechTools'));
+const Articles = lazy(() => import('pages/Articles'));
 const Uses = lazy(() => import('pages/Uses'));
+const Page404 = lazy(() => import('pages/404'));
 
 export const AppContext = createContext();
 export const TransitionContext = createContext();
 
-const repoPrompt = `
-__  __  __
-\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215
-\n\nTaking a peek huh? Check out the source code: https://github.com/HamishMW/portfolio
-`;
+const repoPrompt = `\u00A9 2017-${new Date().getFullYear()} Cody Bennett\n\nCheck out the source code: https://github.com/CodyJasonBennett/portfolio`;
 
 const App = () => {
   const [storedTheme] = useLocalStorage('theme', 'dark');
@@ -41,6 +36,7 @@ const App = () => {
     if (!prerender) {
       console.info(`${repoPrompt}\n\n`);
     }
+
     window.history.scrollRestoration = 'manual';
   }, []);
 
@@ -66,7 +62,7 @@ const AppRoutes = () => {
   return (
     <Fragment>
       <Helmet>
-        <link rel="canonical" href={`https://hamishw.com${pathname}`} />
+        <link rel="canonical" href={`https://codyb.co${pathname}`} />
       </Helmet>
       <VisuallyHidden showOnFocus as="a" className="skip-to-main" href="#MainContent">
         Skip to main content
@@ -85,11 +81,10 @@ const AppRoutes = () => {
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/projects/smart-sparrow" component={ProjectSPR} />
-                    <Route path="/projects/slice" component={ProjectSlice} />
-                    <Route path="/projects/volkihar-knight" component={ProjectVolkihar} />
-                    {/* <Route path="/articles" component={Articles} /> */}
+                    <Route path="/projects/device-models" component={ProjectDM} />
+                    <Route path="/projects/devtech-tools" component={ProjectDTT} />
                     <Route path="/uses" component={Uses} />
+                    <Route path="/articles" component={Articles} />
                     <Route component={Page404} />
                   </Switch>
                 </Suspense>

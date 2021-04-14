@@ -14,10 +14,14 @@ import VisuallyHidden from 'components/VisuallyHidden';
 import './index.css';
 
 const Image = ({ className, style, reveal, delay = 0, raised, src, ...rest }) => {
+  // require returns an ES module in CRA 4
+  // https://github.com/facebook/create-react-app/issues/9831
+  if (src?.default) src = src.default;
+
   const [loaded, setLoaded] = useState(false);
   const { themeId } = useTheme();
   const containerRef = useRef();
-  const inViewport = useInViewport(containerRef, !src?.endsWith('.mp4'));
+  const inViewport = useInViewport(containerRef, reveal || !src?.endsWith('.mp4'));
 
   const onLoad = useCallback(() => {
     setLoaded(true);
@@ -79,12 +83,10 @@ const ImageElements = ({
     };
 
     const placeholderElement = placeholderRef.current;
-    placeholderElement.addEventListener('transitionend', purgePlaceholder);
+    placeholderElement?.addEventListener('transitionend', purgePlaceholder);
 
-    return function cleanUp() {
-      if (placeholderElement) {
-        placeholderElement.removeEventListener('transitionend', purgePlaceholder);
-      }
+    return () => {
+      placeholderElement?.removeEventListener('transitionend', purgePlaceholder);
     };
   }, []);
 
@@ -102,9 +104,9 @@ const ImageElements = ({
   }, [isVideo, src, srcSet]);
 
   useEffect(() => {
-    const { width, height } = placeholderRef.current;
+    if (placeholderRef?.current) {
+      const { width, height } = placeholderRef.current;
 
-    if (width && height) {
       setPlaceholderSize({ width, height });
     }
   }, []);
@@ -155,8 +157,11 @@ const ImageElements = ({
         'image__element-wrapper--in-viewport': inViewport,
       })}
       onMouseOver={isVideo ? handleShowPlayButton : undefined}
+      onFocus={isVideo ? handleShowPlayButton : undefined}
       onMouseOut={isVideo ? () => setIsHovered(false) : undefined}
+      onBlur={isVideo ? () => setIsHovered(false) : undefined}
       style={{ '--delay': numToMs(delay + 1000) }}
+      role="presentation"
     >
       {isVideo && (
         <Fragment>
@@ -166,13 +171,13 @@ const ImageElements = ({
             playsInline
             className={classNames('image__element', { 'image__element--loaded': loaded })}
             autoPlay={!prefersReducedMotion}
-            role="img"
             onLoadStart={onLoad}
-            src={videoSrc}
             aria-label={alt}
             ref={videoRef}
             {...rest}
-          />
+          >
+            <source src={src} type="video/mp4" />
+          </video>
           <Transition
             in={isHovered || isFocused}
             onExit={reflow}

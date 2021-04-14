@@ -1,3 +1,4 @@
+import React from 'react';
 import Monogram from 'components/Monogram';
 import { StoryContainer } from '../../../.storybook/StoryContainer';
 

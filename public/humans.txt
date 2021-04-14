@@ -1,36 +1,33 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
-
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+DESIGNER
 
-Hamish Williams
-Hand crafted design & web development
+Cody Bennett
+Designer, Full-Stack Developer
 
 Design tools:
 Figma
-Photoshop
+InVision
 
-twitter.com/hamishmw
-github.com/hamishmw
+github.com/CodyJasonBennett
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGY
 
 React
-Three js
+Storybook
+Three
 Popmotion
 
 _______________________________________________________________________________
 
-FONTS | フォント
+FONTS
 
 Gotham
+SFMono
 Hiragino Kaku Gothic
+Respira Black

@@ -1,28 +1,23 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import Intro from 'pages/Home/Intro';
-import ProjectSummary from 'pages/Home/ProjectSummary';
-import Profile from 'pages/Home/Profile';
+import Intro from './Intro';
+import ProjectSummary from './ProjectSummary';
+import Profile from './Profile';
 import Footer from 'components/Footer';
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
-import { useLocation } from 'react-router-dom';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+import deviceModelsTexture from 'assets/device-models-phone.jpg';
+import deviceModelsTextureLarge from 'assets/device-models-phone-large.jpg';
+import deviceModelsTexturePlaceholder from 'assets/device-models-phone-placeholder.jpg';
+import dttTexture from 'assets/dtt.jpg';
+import dttTextureLarge from 'assets/dtt-large.jpg';
+import dttTexturePlaceholder from 'assets/dtt-placeholder.jpg';
 import iphone11 from 'assets/iphone-11.glb';
 import macbookPro from 'assets/macbook-pro.glb';
+import portrait from 'assets/portrait.glb';
 import './index.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Developer', 'Creator', 'Animator', 'Illustrator', 'Musician'];
 
 const Home = () => {
   const { status } = useRouteTransition();
@@ -33,12 +28,11 @@ const Home = () => {
   const intro = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
-  const projectThree = useRef();
-  const details = useRef();
+  const about = useRef();
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    const revealSections = [intro, projectOne, projectTwo, projectThree, details];
+    const revealSections = [intro, projectOne, projectTwo, about];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -81,7 +75,7 @@ const Home = () => {
 
     const handleHashchange = (hash, scroll) => {
       clearTimeout(scrollTimeout);
-      const hashSections = [intro, projectOne, details];
+      const hashSections = [intro, projectOne, projectTwo, about];
       const hashString = hash.replace('#', '');
       const element = hashSections.filter(item => item.current.id === hashString)[0];
       if (!element) return;
@@ -138,14 +132,14 @@ const Home = () => {
   return (
     <div className="home">
       <Helmet>
-        <title>Tanisha Darshani | Fashion Designer</title>
+        <title>Cody Bennett | Designer + Developer</title>
         <meta
           name="description"
-          content="Portfolio of Hamish Williams – a digital designer working on web &amp; mobile
-          apps with a focus on motion and user experience design."
+          content="Portfolio of Cody Jason Bennett – a creative designer & developer with a focus on motion and user experience."
         />
         <link rel="prefetch" href={iphone11} as="fetch" crossorigin="" />
         <link rel="prefetch" href={macbookPro} as="fetch" crossorigin="" />
+        <link rel="prefetch" href={portrait} as="fetch" crossorigin="" />
       </Helmet>
       <Intro
         id="intro"
@@ -155,77 +149,56 @@ const Home = () => {
       />
       <ProjectSummary
         id="project-1"
+        alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Device Models"
+        description="Design and development of a Figma plugin to create mockups with 3D device models."
         buttonText="View Project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/device-models"
         model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          type: 'phone',
+          alt: "Device Model's default image",
           textures: [
             {
-              src: sprTexture,
-              srcSet: `${sprTexture} 800w, ${sprTextureLarge} 1440w`,
-              placeholder: sprTexturePlaceholder,
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
+            },
+            {
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-2"
-        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View Website"
-        buttonLink="https://gamestackapp.com"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              src: gamestackTexture,
-              srcSet: `${gamestackTexture} 254w, ${gamestackTextureLarge} 508w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              src: gamestackTexture2,
-              srcSet: `${gamestackTexture2} 254w, ${gamestackTexture2Large} 508w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="A Tool for Everything"
+        description="Creating a platfrom to help developers build better software."
         buttonText="View Project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/devtech-tools"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'DevTech Tools Landing Page',
           textures: [
             {
-              src: sliceTexture,
-              srcSet: `${sliceTexture} 980w, ${sliceTextureLarge} 1376w`,
-              placeholder: sliceTexturePlaceholder,
+              src: dttTexture,
+              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
+              placeholder: dttTexturePlaceholder,
             },
           ],
         }}
       />
       <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
+        sectionRef={about}
+        visible={visibleSections.includes(about.current)}
+        id="about"
       />
       <Footer />
     </div>

@@ -6,25 +6,25 @@ export default {
 };
 
 const placeholderImg =
-  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAQICAgIDAgIDAwYEAwMDAwcFBQQGCAcJCAgHCAgJCg0LCQoMCggICw8LDA0ODg8OCQsQERAOEQ0ODg7/2wBDAQIDAwMDAwcEBAcOCQgJDg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg7/wgARCAASACADAREAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUHBgn/xAAZAQEAAwEBAAAAAAAAAAAAAAAFAwQGAgj/2gAMAwEAAhADEAAAAOanpHEuRHdAjSk8GcqnLA1RdO5nscBYolLViNGLY7CLKMf/xAAjEAABBAEDBAMAAAAAAAAAAAABAAIDBAUSFFETJTIzNILB/9oACAEBAAE/AIYbMngCVRZJXnDpAsndbNhXNPCezuTtPKw23ZS1PaFfmjfaIjCyU5Zj3KkepkTq5VX4CPvKynoKxwG6+w/V/8QAGxEAAwADAQEAAAAAAAAAAAAAAAECAwQRMhL/2gAIAQIBAT8AzpRBirtDxfSJxSmbGwrniNaX0u5xwVtLpJgNryyvR//EABwRAAMAAwEBAQAAAAAAAAAAAAABAgMEESEyE//aAAgBAwEBPwDXzu74U0kXsJTwzW6fhp6lRXWZ/nwvFdMxaN0Sl+Y/sSRrpcP/2Q==';
+  'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIABIAIAMBIgACEQEDEQH/xAAXAAADAQAAAAAAAAAAAAAAAAAEBgcF/9oACAEBAAAAAJ80ZS1DbcVKFVlHw//EABYBAQEBAAAAAAAAAAAAAAAAAAACA//aAAgBAhAAAADdL//EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAIAQMQAAAAwVH/xAArEAACAQQABQIFBQAAAAAAAAABAgMABAURBgcSITFBURMVIzRCYWKBkbH/2gAIAQEAAT8AxmOwOYINrmLJgfedUb+VbRo8tbqQCS3jEkZAIde4O/Yir3l3m4kJjxpdddh4J/urjhLJxpuWyaHsdg+mqgu3t3WSPsy+DoH/AGuEuYVzDiTj/nN7EY+phCrSaJJ9OluwNZLmnlYC0xmuJPh6ALO6dR/TqNZjjLO5m4eaa9kRTv6aOdUfFcL/AHbH9hriF3e+07ltKvk7r8a//8QAHhEAAQQBBQAAAAAAAAAAAAAAAQACAxEzEhMjUVL/2gAIAQIBAT8AMk7yNlzL6fYQknjPLos+bKhyBS5HL//EAB4RAAEDBAMAAAAAAAAAAAAAAAEAAgMEERMzISNR/9oACAEDAQE/ABFSxt72SW9YQU6KllaMOSwPBcAFNqKh1tX/2Q==';
 
-export const images = () => (
+export const carousel = () => (
   <StoryContainer>
     <Carousel
       style={{ maxWidth: 800, width: '100%' }}
       placeholder={placeholderImg}
       images={[
         {
-          src: 'https://source.unsplash.com/ANJHXftvvJ8/1280x720',
-          alt: 'A neon sign with kanji',
+          srcSet: 'https://source.unsplash.com/FfpZPMVV_M8/1280x720',
+          alt: 'Mountain at daytime',
         },
         {
-          src: 'https://source.unsplash.com/qEWEz-U5p8Q/1280x720',
-          alt: 'Tokyo at night',
+          srcSet: 'https://source.unsplash.com/ARSCXacOtkY/1280x720',
+          alt: 'Morning sunrise in the valley',
         },
         {
-          src: 'https://source.unsplash.com/lx9RWIg1Rdg/1280x720',
-          alt: 'A rad cyberpunk dude',
+          srcSet: 'https://source.unsplash.com/Vak2-pUxkUg/1280x720',
+          alt: 'Desert in Morocco',
         },
       ]}
       width={1920}

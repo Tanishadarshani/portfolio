@@ -5,11 +5,11 @@ import Heading from 'components/Heading';
 export default {
   title: 'DecoderText',
   args: {
-    text: 'Slick cyberpunk text',
+    text: 'Decoder text',
   },
 };
 
-export const text = ({ text }) => (
+export const decoderText = ({ text }) => (
   <StoryContainer>
     <Heading level={3}>
       <DecoderText delay={0} text={text} />
