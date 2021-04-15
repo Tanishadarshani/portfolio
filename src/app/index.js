@@ -19,6 +19,8 @@ const Home = lazy(() => import('pages/Home'));
 const Contact = lazy(() => import('pages/Contact'));
 const Uses = lazy(() => import('pages/Uses'));
 const Page404 = lazy(() => import('pages/404'));
+
+const CraftDocs = lazy(() => import('pages/design-project-craft-based'));
 const Atelier = lazy(() => import('pages/atelier'));
 const Menswear = lazy(() => import('pages/menswear'));
 const Taashi = lazy(() => import('pages/taashi'));
@@ -82,6 +84,7 @@ const AppRoutes = () => {
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/projects/craft-docs" component={CraftDocs} />
                     <Route path="/projects/atelier" component={Atelier} />
                     <Route path="/projects/menswear" component={Menswear} />
                     <Route path="/projects/taashi" component={Taashi} />
