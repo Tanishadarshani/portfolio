@@ -88,12 +88,7 @@ const Atelier = () => {
           placeholder={deviceModelsBackgroundPlaceholder}
           entered={!prerender}
         />
-        <ProjectHeader
-          title={title}
-          description={description}
-          url="https://devicemodels.com"
-          roles={roles}
-        />
+        <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection first>
           <ProjectSectionContent>
             <ProjectImage
