@@ -16,6 +16,7 @@ import {
   ProjectTextRow,
   ProjectSectionText,
 } from 'components/ProjectLayout';
+import SegmentedControl, { SegmentedControlOption } from 'components/SegmentedControl';
 import { useTheme } from 'components/ThemeProvider';
 import { useAppContext, useScrollRestore } from 'hooks';
 import { media } from 'utils/style';
@@ -29,17 +30,20 @@ import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
 import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
+import deviceModelsBanner from 'assets/device-models-banner.jpg';
+import deviceModelsBannerLarge from 'assets/device-models-banner-large.jpg';
+import deviceModelsBannerPlaceholder from 'assets/device-models-banner-placeholder.jpg';
+import deviceModelsComponentsDark from 'assets/device-models-components-dark.jpg';
+import deviceModelsComponentsDarkLarge from 'assets/device-models-components-dark-large.jpg';
+import deviceModelsComponentsDarkPlaceholder from 'assets/device-models-components-dark-placeholder.jpg';
+import deviceModelsComponentsLight from 'assets/device-models-components-light.jpg';
+import deviceModelsComponentsLightLarge from 'assets/device-models-components-light-large.jpg';
+import deviceModelsComponentsLightPlaceholder from 'assets/device-models-components-light-placeholder.jpg';
+import deviceModelsLogo from 'assets/device-models-logo.png';
+import deviceModelsLogoLarge from 'assets/device-models-logo-large.png';
+import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.png';
 
-import image0 from 'assets/project-pics/tunic/0.jpg';
-import image1 from 'assets/project-pics/tunic/1.jpg';
-import image2 from 'assets/project-pics/tunic/2.jpg';
-import image3 from 'assets/project-pics/tunic/3.jpg';
-import image4 from 'assets/project-pics/tunic/4.jpg';
-import image5 from 'assets/project-pics/tunic/5.jpg';
-import image6 from 'assets/project-pics/tunic/6.jpg';
-import image7 from 'assets/project-pics/tunic/7.jpg';
-
-const title = 'Tunic';
+const title = 'Device Models';
 const description =
   'Design and development of a Figma plugin to create mockups with 3D device models.';
 const roles = [
@@ -83,7 +87,7 @@ const Tunic = () => {
           <ProjectSectionContent>
             <ProjectImage
               raised
-              srcSet={`${image0} 1280w, ${image0} 2560w`}
+              srcSet={`${deviceModels} 1280w, ${deviceModelsLarge} 2560w`}
               placeholder={deviceModelsPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="Device Models plugin interface."
@@ -93,43 +97,17 @@ const Tunic = () => {
         <ProjectSection light>
           <ProjectTextRow>
             <Image
-              srcSet={`${image1} 400w, ${image1} 898w`}
+              srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
+          </ProjectTextRow>
+        </ProjectSection>
+        <ProjectSection>
+          <ProjectTextRow>
             <Image
-              srcSet={`${image2} 400w, ${image2} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image3} 400w, ${image3} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image4} 400w, ${image4} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image5} 400w, ${image5} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image6} 400w, ${image6} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image7} 400w, ${image7} 898w`}
+              srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
