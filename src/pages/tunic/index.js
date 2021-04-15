@@ -30,15 +30,15 @@ import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
 
-import image0 from 'assets/project-pics/tunic/0.jpg';
-import image1 from 'assets/project-pics/tunic/1.jpg';
-import image2 from 'assets/project-pics/tunic/2.jpg';
-import image3 from 'assets/project-pics/tunic/3.jpg';
-import image4 from 'assets/project-pics/tunic/4.jpg';
-import image5 from 'assets/project-pics/tunic/5.jpg';
-import image6 from 'assets/project-pics/tunic/6.jpg';
-import image7 from 'assets/project-pics/tunic/7.jpg';
-import image8 from 'assets/project-pics/tunic/8.jpg';
+import image0 from 'assets/project-pics/menswear/0.jpg';
+import image1 from 'assets/project-pics/menswear/1.jpg';
+import image2 from 'assets/project-pics/menswear/2.jpg';
+import image3 from 'assets/project-pics/menswear/3.jpg';
+import image4 from 'assets/project-pics/menswear/4.jpg';
+import image5 from 'assets/project-pics/menswear/5.jpg';
+import image6 from 'assets/project-pics/menswear/6.jpg';
+import image7 from 'assets/project-pics/menswear/7.jpg';
+import image8 from 'assets/project-pics/menswear/8.jpg';
 
 const title = 'Tunic';
 const description =
