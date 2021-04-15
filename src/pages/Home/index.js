@@ -17,7 +17,7 @@ import macbookPro from 'assets/macbook-pro.glb';
 import portrait from 'assets/portrait.glb';
 import './index.css';
 
-const disciplines = ['Entrepreneur', 'Photograher', 'Traveller', 'Illustrator'];
+const disciplines = ['Entrepreneur', 'Traveller'];
 
 const Home = () => {
   const { status } = useRouteTransition();
@@ -156,7 +156,7 @@ const Home = () => {
         title="Design Project Craft Based"
         description="Design and development of a Figma plugin to create mockups with 3D device models."
         buttonText="View Project"
-        buttonLink="/projects/device-models"
+        buttonLink="/projects/craft-docs"
         model={{
           type: 'phone',
           alt: "Device Model's default image",
@@ -182,7 +182,7 @@ const Home = () => {
         title="Menswear"
         description="Creating a platfrom to help developers build better software."
         buttonText="View Project"
-        buttonLink="/projects/devtech-tools"
+        buttonLink="/projects/menswear"
         model={{
           type: 'laptop',
           alt: 'DevTech Tools Landing Page',
@@ -196,7 +196,7 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-1"
+        id="project-3"
         alternate
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
@@ -204,7 +204,7 @@ const Home = () => {
         title="Atelier"
         description="Design and development of a Figma plugin to create mockups with 3D device models."
         buttonText="View Project"
-        buttonLink="/projects/device-models"
+        buttonLink="/projects/atelier"
         model={{
           type: 'phone',
           alt: "Device Model's default image",
@@ -223,14 +223,14 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-4"
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={4}
         title="Tunic"
         description="Creating a platfrom to help developers build better software."
         buttonText="View Project"
-        buttonLink="/projects/devtech-tools"
+        buttonLink="/projects/tunic"
         model={{
           type: 'laptop',
           alt: 'DevTech Tools Landing Page',
@@ -244,14 +244,14 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-2"
+        id="project-5"
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={5}
         title="Taashi"
         description="Creating a platfrom to help developers build better software."
         buttonText="View Project"
-        buttonLink="/projects/devtech-tools"
+        buttonLink="/projects/taashi"
         model={{
           type: 'laptop',
           alt: 'DevTech Tools Landing Page',

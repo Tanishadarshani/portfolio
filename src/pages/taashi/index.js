@@ -30,6 +30,16 @@ import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
 
+import image0 from 'assets/project-pics/atelier/0.jpg';
+import image1 from 'assets/project-pics/atelier/1.jpg';
+import image2 from 'assets/project-pics/atelier/2.jpg';
+import image3 from 'assets/project-pics/atelier/3.jpg';
+import image4 from 'assets/project-pics/atelier/4.jpg';
+import image5 from 'assets/project-pics/atelier/5.jpg';
+import image6 from 'assets/project-pics/atelier/6.jpg';
+import image7 from 'assets/project-pics/atelier/7.jpg';
+import image8 from 'assets/project-pics/atelier/8.jpg';
+
 const title = 'Taashi';
 const description =
   'Design and development of a Figma plugin to create mockups with 3D device models.';
@@ -74,7 +84,7 @@ const Taashi = () => {
           <ProjectSectionContent>
             <ProjectImage
               raised
-              srcSet={`${deviceModels} 1280w, ${deviceModelsLarge} 2560w`}
+              srcSet={`${image0} 1280w, ${image0} 2560w`}
               placeholder={deviceModelsPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="Device Models plugin interface."
@@ -84,17 +94,37 @@ const Taashi = () => {
         <ProjectSection light>
           <ProjectTextRow>
             <Image
-              srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
+              srcSet={`${image1} 400w, ${image1} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
-          </ProjectTextRow>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectTextRow>
             <Image
-              srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
+              srcSet={`${image2} 400w, ${image2} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image3} 400w, ${image3} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image4} 400w, ${image4} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image5} 400w, ${image6} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image7} 400w, ${image8} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
