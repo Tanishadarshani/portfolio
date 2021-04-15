@@ -21,18 +21,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'LinkedIn',
-    url: 'https://linkedin.codyb.co',
-    icon: 'linkedin',
+    label: 'Instagram',
+    url: 'https://instagram.com/tanishaadarshani_?igshid=1i6wxi2m0ij4h',
+    icon: 'instagram',
   },
   {
-    label: 'Dribbble',
-    url: 'https://dribbble.codyb.co',
-    icon: 'dribbble',
+    label: 'Taashi - Instagram Page',
+    url: 'https://instagram.com/taashi_in?igshid=1w4le4wbyloj0',
+    icon: 'instagram',
   },
   {
-    label: 'Github',
-    url: 'https://github.codyb.co',
-    icon: 'github',
+    label: 'Amber by Tanisha - Instagram Page',
+    url: 'https://instagram.com/amberbytanisha?igshid=1ml14aojt8o6s',
+    icon: 'instagram',
   },
 ];

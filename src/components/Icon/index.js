@@ -13,6 +13,7 @@ import { ReactComponent as Pause } from 'assets/icons/pause.svg';
 import { ReactComponent as Play } from 'assets/icons/play.svg';
 import { ReactComponent as Send } from 'assets/icons/send.svg';
 import { ReactComponent as Twitter } from 'assets/icons/twitter.svg';
+import { ReactComponent as Instagram } from 'assets/icons/instagram.svg';
 import './index.css';
 
 export const icons = {
@@ -30,6 +31,7 @@ export const icons = {
   play: Play,
   send: Send,
   twitter: Twitter,
+  instagram: Instagram,
 };
 
 const Icon = ({ icon, style, className, ...rest }) => {
