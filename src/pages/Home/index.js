@@ -153,7 +153,7 @@ const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Device Models"
+        title="Design Project Craft Based"
         description="Design and development of a Figma plugin to create mockups with 3D device models."
         buttonText="View Project"
         buttonLink="/projects/device-models"
@@ -179,7 +179,76 @@ const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="A Tool for Everything"
+        title="Menswear"
+        description="Creating a platfrom to help developers build better software."
+        buttonText="View Project"
+        buttonLink="/projects/devtech-tools"
+        model={{
+          type: 'laptop',
+          alt: 'DevTech Tools Landing Page',
+          textures: [
+            {
+              src: dttTexture,
+              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
+              placeholder: dttTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-1"
+        alternate
+        sectionRef={projectOne}
+        visible={visibleSections.includes(projectOne.current)}
+        index={3}
+        title="Atelier"
+        description="Design and development of a Figma plugin to create mockups with 3D device models."
+        buttonText="View Project"
+        buttonLink="/projects/device-models"
+        model={{
+          type: 'phone',
+          alt: "Device Model's default image",
+          textures: [
+            {
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
+            },
+            {
+              src: deviceModelsTexture,
+              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
+              placeholder: deviceModelsTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={4}
+        title="Tunic"
+        description="Creating a platfrom to help developers build better software."
+        buttonText="View Project"
+        buttonLink="/projects/devtech-tools"
+        model={{
+          type: 'laptop',
+          alt: 'DevTech Tools Landing Page',
+          textures: [
+            {
+              src: dttTexture,
+              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
+              placeholder: dttTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={5}
+        title="Taashi"
         description="Creating a platfrom to help developers build better software."
         buttonText="View Project"
         buttonLink="/projects/devtech-tools"

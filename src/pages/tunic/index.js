@@ -16,7 +16,6 @@ import {
   ProjectTextRow,
   ProjectSectionText,
 } from 'components/ProjectLayout';
-import SegmentedControl, { SegmentedControlOption } from 'components/SegmentedControl';
 import { useTheme } from 'components/ThemeProvider';
 import { useAppContext, useScrollRestore } from 'hooks';
 import { media } from 'utils/style';
@@ -30,20 +29,8 @@ import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
 import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
-import deviceModelsBanner from 'assets/device-models-banner.jpg';
-import deviceModelsBannerLarge from 'assets/device-models-banner-large.jpg';
-import deviceModelsBannerPlaceholder from 'assets/device-models-banner-placeholder.jpg';
-import deviceModelsComponentsDark from 'assets/device-models-components-dark.jpg';
-import deviceModelsComponentsDarkLarge from 'assets/device-models-components-dark-large.jpg';
-import deviceModelsComponentsDarkPlaceholder from 'assets/device-models-components-dark-placeholder.jpg';
-import deviceModelsComponentsLight from 'assets/device-models-components-light.jpg';
-import deviceModelsComponentsLightLarge from 'assets/device-models-components-light-large.jpg';
-import deviceModelsComponentsLightPlaceholder from 'assets/device-models-components-light-placeholder.jpg';
-import deviceModelsLogo from 'assets/device-models-logo.png';
-import deviceModelsLogoLarge from 'assets/device-models-logo-large.png';
-import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.png';
 
-const title = 'Device Models';
+const title = 'Tunic';
 const description =
   'Design and development of a Figma plugin to create mockups with 3D device models.';
 const roles = [
@@ -53,7 +40,7 @@ const roles = [
   'Motion Design',
 ];
 
-const ProjectDM = () => {
+const Tunic = () => {
   const { themeId } = useTheme();
   const { dispatch } = useAppContext();
   useScrollRestore();
@@ -120,4 +107,4 @@ const ProjectDM = () => {
   );
 };
 
-export default ProjectDM;
+export default Tunic;
