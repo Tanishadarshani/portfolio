@@ -23,18 +23,22 @@ import prerender from 'utils/prerender';
 import deviceModelsBackground from 'assets/device-models-background.jpg';
 import deviceModelsBackgroundLarge from 'assets/device-models-background-large.jpg';
 import deviceModelsBackgroundPlaceholder from 'assets/device-models-background-placeholder.jpg';
+import deviceModels from 'assets/device-models.jpg';
+import deviceModelsLarge from 'assets/device-models-large.jpg';
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
+import deviceModelsBranding from 'assets/device-models-branding.png';
+import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
 
-import image0 from 'assets/project-pics/menswear/0.jpg';
-import image1 from 'assets/project-pics/menswear/1.jpg';
-import image2 from 'assets/project-pics/menswear/2.jpg';
-import image3 from 'assets/project-pics/menswear/3.jpg';
-import image4 from 'assets/project-pics/menswear/4.jpg';
-import image5 from 'assets/project-pics/menswear/5.jpg';
-import image6 from 'assets/project-pics/menswear/6.jpg';
-import image7 from 'assets/project-pics/menswear/7.jpg';
-import image8 from 'assets/project-pics/menswear/8.jpg';
+import image0 from 'assets/project-pics/taashi/0.jpg';
+import image1 from 'assets/project-pics/taashi/1.jpg';
+import image2 from 'assets/project-pics/taashi/2.jpg';
+import image3 from 'assets/project-pics/taashi/3.jpg';
+import image4 from 'assets/project-pics/taashi/4.jpg';
+import image5 from 'assets/project-pics/taashi/5.jpg';
+import image6 from 'assets/project-pics/taashi/6.jpg';
+import image7 from 'assets/project-pics/taashi/7.jpg';
+import image8 from 'assets/project-pics/taashi/8.jpg';
 
 const title = 'Taashi';
 const description =
@@ -114,13 +118,25 @@ const Taashi = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image5} 400w, ${image6} 898w`}
+              srcSet={`${image5} 400w, ${image5} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image7} 400w, ${image8} 898w`}
+              srcSet={`${image6} 400w, ${image6} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image7} 400w, ${image7} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image8} 400w, ${image8} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

@@ -30,15 +30,14 @@ import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
 
-import image0 from 'assets/project-pics/menswear/0.jpg';
-import image1 from 'assets/project-pics/menswear/1.jpg';
-import image2 from 'assets/project-pics/menswear/2.jpg';
-import image3 from 'assets/project-pics/menswear/3.jpg';
-import image4 from 'assets/project-pics/menswear/4.jpg';
-import image5 from 'assets/project-pics/menswear/5.jpg';
-import image6 from 'assets/project-pics/menswear/6.jpg';
-import image7 from 'assets/project-pics/menswear/7.jpg';
-import image8 from 'assets/project-pics/menswear/8.jpg';
+import image0 from 'assets/project-pics/tunic/0.jpg';
+import image1 from 'assets/project-pics/tunic/1.jpg';
+import image2 from 'assets/project-pics/tunic/2.jpg';
+import image3 from 'assets/project-pics/tunic/3.jpg';
+import image4 from 'assets/project-pics/tunic/4.jpg';
+import image5 from 'assets/project-pics/tunic/5.jpg';
+import image6 from 'assets/project-pics/tunic/6.jpg';
+import image7 from 'assets/project-pics/tunic/7.jpg';
 
 const title = 'Tunic';
 const description =
@@ -118,13 +117,19 @@ const Tunic = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image5} 400w, ${image6} 898w`}
+              srcSet={`${image5} 400w, ${image5} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image7} 400w, ${image8} 898w`}
+              srcSet={`${image6} 400w, ${image6} 898w`}
+              placeholder={deviceModelsBrandingPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image7} 400w, ${image7} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
