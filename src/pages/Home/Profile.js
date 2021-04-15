@@ -30,14 +30,14 @@ const ProfileText = ({ status, titleId }) => (
     >
       I am Tanisha. I’m currently a third year student pursuing a bachelors degree in
       fashion designing at MIT Institute of Design, Pune. My absolute love and passion is
-      designing.I’ll relatively present myself as a autodidactic creative designer who
+      designing. I’ll relatively present myself as a autodidactic creative designer who
       adores to operate or work in all styles of creative domains.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      So i decided to pursue my further education in the feild of creativity. Apart from
+      So I decided to pursue my further education in the field of creativity. Apart from
       being a full time student, I am a small entrepreneur owing my own Apparel brand in
       Pune. I am just delivering what I am best at through my work and my business while
       taking everyone’s appreciation about it.
