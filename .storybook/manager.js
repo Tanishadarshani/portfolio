@@ -4,8 +4,8 @@ import { addons } from '@storybook/addons';
 addons.setConfig({
   theme: {
     ...themes.dark,
-    brandImage: 'https://codyb.co/icon.svg',
+    brandImage: 'https://tanishadarshani.com/icon.svg',
     brandTitle: 'Cody Bennett Components',
-    brandUrl: 'https://codyb.co',
+    brandUrl: 'https://tanishadarshani.com',
   },
 });

@@ -17,12 +17,8 @@ import './index.css';
 
 const Home = lazy(() => import('pages/Home'));
 const Contact = lazy(() => import('pages/Contact'));
-const ProjectDM = lazy(() => import('pages/DeviceModels'));
-const ProjectDTT = lazy(() => import('pages/DevTechTools'));
-const Articles = lazy(() => import('pages/Articles'));
 const Uses = lazy(() => import('pages/Uses'));
 const Page404 = lazy(() => import('pages/404'));
-const CraftDocs = lazy(() => import('pages/design-project-craft-based'));
 const Atelier = lazy(() => import('pages/atelier'));
 const Menswear = lazy(() => import('pages/menswear'));
 const Taashi = lazy(() => import('pages/taashi'));
@@ -67,7 +63,7 @@ const AppRoutes = () => {
   return (
     <Fragment>
       <Helmet>
-        <link rel="canonical" href={`https://codyb.co${pathname}`} />
+        <link rel="canonical" href={`https://tanishadarshani.com${pathname}`} />
       </Helmet>
       <VisuallyHidden showOnFocus as="a" className="skip-to-main" href="#MainContent">
         Skip to main content
@@ -86,15 +82,11 @@ const AppRoutes = () => {
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/projects/device-models" component={ProjectDM} />
-                    <Route path="/projects/devtech-tools" component={ProjectDTT} />
-                    <Route path="/projects/craft-docs" component={CraftDocs} />
                     <Route path="/projects/atelier" component={Atelier} />
                     <Route path="/projects/menswear" component={Menswear} />
                     <Route path="/projects/taashi" component={Taashi} />
                     <Route path="/projects/tunic" component={Tunic} />
                     <Route path="/uses" component={Uses} />
-                    <Route path="/articles" component={Articles} />
                     <Route component={Page404} />
                   </Switch>
                 </Suspense>

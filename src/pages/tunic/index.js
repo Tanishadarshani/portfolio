@@ -1,8 +1,6 @@
 import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import Image from 'components/Image';
-import Link from 'components/Link';
-import { Button } from 'components/Button';
 import Footer from 'components/Footer';
 import {
   ProjectContainer,
@@ -11,12 +9,8 @@ import {
   ProjectSection,
   ProjectSectionContent,
   ProjectImage,
-  ProjectSectionHeading,
-  ProjectSectionColumns,
   ProjectTextRow,
-  ProjectSectionText,
 } from 'components/ProjectLayout';
-import SegmentedControl, { SegmentedControlOption } from 'components/SegmentedControl';
 import { useTheme } from 'components/ThemeProvider';
 import { useAppContext, useScrollRestore } from 'hooks';
 import { media } from 'utils/style';
@@ -24,24 +18,8 @@ import prerender from 'utils/prerender';
 import deviceModelsBackground from 'assets/device-models-background.jpg';
 import deviceModelsBackgroundLarge from 'assets/device-models-background-large.jpg';
 import deviceModelsBackgroundPlaceholder from 'assets/device-models-background-placeholder.jpg';
-import deviceModels from 'assets/device-models.jpg';
-import deviceModelsLarge from 'assets/device-models-large.jpg';
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
-import deviceModelsBranding from 'assets/device-models-branding.png';
-import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
 import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
-import deviceModelsBanner from 'assets/device-models-banner.jpg';
-import deviceModelsBannerLarge from 'assets/device-models-banner-large.jpg';
-import deviceModelsBannerPlaceholder from 'assets/device-models-banner-placeholder.jpg';
-import deviceModelsComponentsDark from 'assets/device-models-components-dark.jpg';
-import deviceModelsComponentsDarkLarge from 'assets/device-models-components-dark-large.jpg';
-import deviceModelsComponentsDarkPlaceholder from 'assets/device-models-components-dark-placeholder.jpg';
-import deviceModelsComponentsLight from 'assets/device-models-components-light.jpg';
-import deviceModelsComponentsLightLarge from 'assets/device-models-components-light-large.jpg';
-import deviceModelsComponentsLightPlaceholder from 'assets/device-models-components-light-placeholder.jpg';
-import deviceModelsLogo from 'assets/device-models-logo.png';
-import deviceModelsLogoLarge from 'assets/device-models-logo-large.png';
-import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.png';
 
 import image0 from 'assets/project-pics/tunic2/0.jpg';
 import image1 from 'assets/project-pics/tunic2/1.jpg';
