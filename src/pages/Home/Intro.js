@@ -90,7 +90,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                     )}
                     style={{ '--delay': tokens.base.durationXS }}
                   >
-                    Designer
+                    Fashion Designer
                   </span>
                   <span
                     className={classNames(

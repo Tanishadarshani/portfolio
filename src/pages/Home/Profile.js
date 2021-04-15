@@ -28,19 +28,27 @@ const ProfileText = ({ status, titleId }) => (
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      I am Cody. I am a creative designer & developer with a focus on motion and user
-      experience. My projects include UI/UX design, animation, illustration, and
-      development. If you are interested in the tools and software I use, check out my{' '}
-      <Link href="/uses">uses page</Link>.
+      I am Tanisha. I’m currently a third year student pursuing a bachelors degree in
+      fashion designing at MIT Institute of Design, Pune. My absolute love and passion is
+      designing.I’ll relatively present myself as a autodidactic creative designer who
+      adores to operate or work in all styles of creative domains.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      In my spare time, I like to{' '}
-      <Link href="https://youtube.codyb.co">play/compose music</Link> and{' '}
-      <Link href="/articles">write technical articles</Link>. I am always interested in
-      new projects, so feel free to drop me a line.
+      So i decided to pursue my further education in the feild of creativity. Apart from
+      being a full time student, I am a small entrepreneur owing my own Apparel brand in
+      Pune. I am just delivering what I am best at through my work and my business while
+      taking everyone’s appreciation about it.
+    </Text>
+    <Text
+      className={classNames('profile__description', `profile__description--${status}`)}
+      size="l"
+    >
+      Let's work along! I'm looking to connect with people having contrasting and colorful
+      ideas. If you're looking to collaborate on a project, feel free to reach on my
+      social medias.
     </Text>
   </Fragment>
 );
