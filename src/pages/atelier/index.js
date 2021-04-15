@@ -61,13 +61,8 @@ import image27 from 'assets/project-pics/atelier/27.jpg';
 
 const title = 'Atelier';
 const description =
-  'Design and development of a Figma plugin to create mockups with 3D device models.';
-const roles = [
-  'Creative Direction',
-  'UX and UI Design',
-  'Front End & App Development',
-  'Motion Design',
-];
+  'Atelier means a workshop or a studio meant especially for the artist, designer or fashion house. It focuses on couture, tailoring techniques, being creative with both patterns and as well as fabrication. It is focused on classic techniques of fashion until it can upcycle fashion from just a stylistic approach to clothes to major crafts. The pieces are made from high quality, expensive fabric and sewn together with great care. The course is all about tiny details which are missed in other courses. We had to get inspired by the designers Shntanu and Nikhil.';
+const roles = ['Shantanu and Nikhil', 'Anti Trend', 'Fit and Flare'];
 
 const Atelier = () => {
   const { themeId } = useTheme();

@@ -57,13 +57,8 @@ import image23 from 'assets/project-pics/menswear/23.jpg';
 
 const title = 'Menswear';
 const description =
-  'Design and development of a Figma plugin to create mockups with 3D device models.';
-const roles = [
-  'Creative Direction',
-  'UX and UI Design',
-  'Front End & App Development',
-  'Motion Design',
-];
+  'In this Project my inspiration was the sculptural artist named Erwin Wurm. The design process was taken furter by the concept of everyday objects in our daily life.';
+const roles = ['Erwin wurm', 'Everyday objects', 'Avant-garde'];
 
 const Menswear = () => {
   const { themeId } = useTheme();

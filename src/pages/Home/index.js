@@ -17,6 +17,12 @@ import macbookPro from 'assets/macbook-pro.glb';
 import portrait from 'assets/portrait.glb';
 import './index.css';
 
+import craftHolder from 'assets/project-pics/craft-cover.jpg';
+import meanswearHolder from 'assets/project-pics/menwears-cover.jpg';
+import atelierHolder from 'assets/project-pics/atelier-cover.jpg';
+import tunicHolder from 'assets/project-pics/tunic-cover.jpg';
+import taashiHolder from 'assets/project-pics/taashi-cover.jpg';
+
 const disciplines = ['Entrepreneur', 'Traveller'];
 
 const Home = () => {
@@ -154,7 +160,7 @@ const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Design Project Craft Based"
-        description="Design and development of a Figma plugin to create mockups with 3D device models."
+        description="In this project we had to get inspired by any Indian Art or Craft. I chose Rogan Art as my inspiration. So for that I had to visit a small village in Bhuj, Gujarat named Nirona. Where Rogan Art is practised. "
         buttonText="View Project"
         buttonLink="/projects/craft-docs"
         model={{
@@ -162,14 +168,14 @@ const Home = () => {
           alt: "Device Model's default image",
           textures: [
             {
-              src: deviceModelsTexture,
-              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
-              placeholder: deviceModelsTexturePlaceholder,
+              src: craftHolder,
+              srcSet: `${craftHolder} 254w, ${craftHolder} 508w`,
+              placeholder: craftHolder,
             },
             {
-              src: deviceModelsTexture,
-              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
-              placeholder: deviceModelsTexturePlaceholder,
+              src: craftHolder,
+              srcSet: `${craftHolder} 254w, ${craftHolder} 508w`,
+              placeholder: craftHolder,
             },
           ],
         }}
@@ -180,7 +186,7 @@ const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Menswear"
-        description="Creating a platfrom to help developers build better software."
+        description="In this Project my inspiration was the sculptural artist name Erwin Wurm. The design process was taken by the concept of everyday objects in our daily life."
         buttonText="View Project"
         buttonLink="/projects/menswear"
         model={{
@@ -188,9 +194,9 @@ const Home = () => {
           alt: 'DevTech Tools Landing Page',
           textures: [
             {
-              src: dttTexture,
-              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
-              placeholder: dttTexturePlaceholder,
+              src: meanswearHolder,
+              srcSet: `${meanswearHolder} 800w, ${meanswearHolder} 1440w`,
+              placeholder: meanswearHolder,
             },
           ],
         }}
@@ -198,11 +204,11 @@ const Home = () => {
       <ProjectSummary
         id="project-3"
         alternate
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
         index={3}
         title="Atelier"
-        description="Design and development of a Figma plugin to create mockups with 3D device models."
+        description="Atelier means a workshop or a studio meant especially for the artist, designer or fashion house. It focuses on couture, tailoring techniques, being creative with both patterns and as well as fabrication."
         buttonText="View Project"
         buttonLink="/projects/atelier"
         model={{
@@ -210,14 +216,14 @@ const Home = () => {
           alt: "Device Model's default image",
           textures: [
             {
-              src: deviceModelsTexture,
-              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
-              placeholder: deviceModelsTexturePlaceholder,
+              src: atelierHolder,
+              srcSet: `${atelierHolder} 254w, ${atelierHolder} 508w`,
+              placeholder: atelierHolder,
             },
             {
-              src: deviceModelsTexture,
-              srcSet: `${deviceModelsTexture} 254w, ${deviceModelsTextureLarge} 508w`,
-              placeholder: deviceModelsTexturePlaceholder,
+              src: atelierHolder,
+              srcSet: `${atelierHolder} 254w, ${atelierHolder} 508w`,
+              placeholder: atelierHolder,
             },
           ],
         }}
@@ -228,7 +234,7 @@ const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={4}
         title="Tunic"
-        description="Creating a platfrom to help developers build better software."
+        description="My M.O for this was to choose a famous monument and design something in its inspiration. I chose the Taj Mahal for this project."
         buttonText="View Project"
         buttonLink="/projects/tunic"
         model={{
@@ -236,30 +242,36 @@ const Home = () => {
           alt: 'DevTech Tools Landing Page',
           textures: [
             {
-              src: dttTexture,
-              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
-              placeholder: dttTexturePlaceholder,
+              src: tunicHolder,
+              srcSet: `${tunicHolder} 800w, ${tunicHolder} 1440w`,
+              placeholder: tunicHolder,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-5"
+        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={5}
         title="Taashi"
-        description="Creating a platfrom to help developers build better software."
+        description="Building my own fashion brand whose aim is to provide stylish clothes to people with affordability in mind."
         buttonText="View Project"
         buttonLink="/projects/taashi"
         model={{
-          type: 'laptop',
-          alt: 'DevTech Tools Landing Page',
+          type: 'phone',
+          alt: "Device Model's default image",
           textures: [
             {
-              src: dttTexture,
-              srcSet: `${dttTexture} 800w, ${dttTextureLarge} 1440w`,
-              placeholder: dttTexturePlaceholder,
+              src: taashiHolder,
+              srcSet: `${taashiHolder} 254w, ${taashiHolder} 508w`,
+              placeholder: taashiHolder,
+            },
+            {
+              src: taashiHolder,
+              srcSet: `${taashiHolder} 254w, ${taashiHolder} 508w`,
+              placeholder: taashiHolder,
             },
           ],
         }}

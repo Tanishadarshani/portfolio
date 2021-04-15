@@ -7,7 +7,7 @@ import Divider from 'components/Divider';
 import Section from 'components/Section';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import { ReactComponent as KatakanaProfile } from 'assets/katakana-profile.svg';
+import ProfilePic from 'assets/profile-pic.jpeg';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import './Profile.css';
@@ -95,7 +95,7 @@ const Profile = ({ id, visible, sectionRef }) => {
                   About Me
                 </div>
               </div>
-              <div className="profile__image-wrapper">
+              {/* <div className="profile__image-wrapper">
                 {!prerender && (
                   <Suspense fallback={null}>
                     <Portrait
@@ -107,10 +107,8 @@ const Profile = ({ id, visible, sectionRef }) => {
                     />
                   </Suspense>
                 )}
-                <KatakanaProfile
-                  className={classNames('profile__svg', `profile__svg--${status}`)}
-                />
-              </div>
+                <ProfilePic />
+              </div> */}
             </div>
           </div>
         )}

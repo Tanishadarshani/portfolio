@@ -45,13 +45,8 @@ import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.p
 
 const title = 'Device Models';
 const description =
-  'Design and development of a Figma plugin to create mockups with 3D device models.';
-const roles = [
-  'Creative Direction',
-  'UX and UI Design',
-  'Front End & App Development',
-  'Motion Design',
-];
+  'The rough idea about the brand began in lockdown. I, Tanisha Darshani, a Fashion designing student have started with my own brand named “Taashi”. My main aim was to provide stylish clothes to people in affordability. We have various range of garments which would definitely make your clothing game strong.';
+const roles = ['Fashion Brand', 'Brand Building'];
 
 const Taashi = () => {
   const { themeId } = useTheme();

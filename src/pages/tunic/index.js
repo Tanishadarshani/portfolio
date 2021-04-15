@@ -43,15 +43,10 @@ import deviceModelsLogo from 'assets/device-models-logo.png';
 import deviceModelsLogoLarge from 'assets/device-models-logo-large.png';
 import deviceModelsLogoPlaceholder from 'assets/device-models-logo-placeholder.png';
 
-const title = 'Device Models';
+const title = 'Tunic';
 const description =
-  'Design and development of a Figma plugin to create mockups with 3D device models.';
-const roles = [
-  'Creative Direction',
-  'UX and UI Design',
-  'Front End & App Development',
-  'Motion Design',
-];
+  'My M.O for this was to choose a famous monument and design something in its inspiration. I chose the Taj Mahal for this project.';
+const roles = ['Taj Mahal', 'Embroidery'];
 
 const Tunic = () => {
   const { themeId } = useTheme();
