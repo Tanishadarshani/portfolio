@@ -7,10 +7,11 @@ import Divider from 'components/Divider';
 import Section from 'components/Section';
 import Heading from 'components/Heading';
 import Text from 'components/Text';
-import ProfilePic from 'assets/profile-pic.jpeg';
+import profilePic from 'assets/profile-pic.jpeg';
 import { reflow } from 'utils/transition';
 import prerender from 'utils/prerender';
 import './Profile.css';
+import { ProjectImage } from 'components/ProjectLayout';
 
 const Portrait = lazy(() => import('components/Portrait'));
 
@@ -95,8 +96,8 @@ const Profile = ({ id, visible, sectionRef }) => {
                   About Me
                 </div>
               </div>
-              {/* <div className="profile__image-wrapper">
-                {!prerender && (
+              <div className="profile__image-wrapper">
+                {/* {!prerender && (
                   <Suspense fallback={null}>
                     <Portrait
                       className={classNames(
@@ -106,9 +107,9 @@ const Profile = ({ id, visible, sectionRef }) => {
                       delay={100}
                     />
                   </Suspense>
-                )}
-                <ProfilePic />
-              </div> */}
+                )} */}
+                <ProjectImage srcSet={`${profilePic} 400w, ${profilePic} 898w`} />
+              </div>
             </div>
           </div>
         )}
