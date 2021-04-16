@@ -34,11 +34,22 @@ const Home = () => {
   const intro = useRef();
   const projectOne = useRef();
   const projectTwo = useRef();
+  const projectThree = useRef();
+  const projectFour = useRef();
+  const projectFive = useRef();
   const about = useRef();
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    const revealSections = [intro, projectOne, projectTwo, about];
+    const revealSections = [
+      intro,
+      projectOne,
+      projectTwo,
+      projectThree,
+      projectFour,
+      projectFive,
+      about,
+    ];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -81,7 +92,15 @@ const Home = () => {
 
     const handleHashchange = (hash, scroll) => {
       clearTimeout(scrollTimeout);
-      const hashSections = [intro, projectOne, projectTwo, about];
+      const hashSections = [
+        intro,
+        projectOne,
+        projectTwo,
+        projectThree,
+        projectFour,
+        projectFive,
+        about,
+      ];
       const hashString = hash.replace('#', '');
       const element = hashSections.filter(item => item.current.id === hashString)[0];
       if (!element) return;
@@ -203,9 +222,8 @@ const Home = () => {
       />
       <ProjectSummary
         id="project-3"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Atelier"
         description="Atelier means a workshop or a studio meant especially for the artist, designer or fashion house. It focuses on couture, tailoring techniques, being creative with both patterns and as well as fabrication."
@@ -230,8 +248,8 @@ const Home = () => {
       />
       <ProjectSummary
         id="project-4"
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
         index={4}
         title="Tunic"
         description="My M.O for this was to choose a famous monument and design something in its inspiration. I chose the Taj Mahal for this project."
@@ -251,9 +269,8 @@ const Home = () => {
       />
       <ProjectSummary
         id="project-5"
-        alternate
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectTwo.current)}
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
         index={5}
         title="Taashi"
         description="Building my own fashion brand whose aim is to provide stylish clothes to people with affordability in mind."
