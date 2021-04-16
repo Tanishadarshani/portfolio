@@ -9,10 +9,7 @@ import {
   ProjectSection,
   ProjectSectionContent,
   ProjectImage,
-  ProjectSectionHeading,
-  ProjectSectionColumns,
   ProjectTextRow,
-  ProjectSectionText,
 } from 'components/ProjectLayout';
 import { useTheme } from 'components/ThemeProvider';
 import { useAppContext, useScrollRestore } from 'hooks';
