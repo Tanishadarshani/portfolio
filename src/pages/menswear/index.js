@@ -48,7 +48,7 @@ import image23 from 'assets/project-pics/menswear/23.jpg';
 
 const title = 'Menswear';
 const description =
-  'In this Project my inspiration was the sculptural artist named Erwin Wurm. The design process was taken furter by the concept of everyday objects in our daily life.';
+  'In this Project my inspiration was the sculptural artist named Erwin Wurm. The design process was taken further by the concept of everyday objects in our daily life.';
 const roles = ['Erwin wurm', 'Everyday objects', 'Avant-garde'];
 
 const Menswear = () => {

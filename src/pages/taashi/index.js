@@ -74,12 +74,6 @@ const Taashi = () => {
         <ProjectSection light>
           <ProjectTextRow>
             <Image
-              srcSet={`${image0} 400w, ${image0} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
               placeholder={deviceModelsBrandingPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
