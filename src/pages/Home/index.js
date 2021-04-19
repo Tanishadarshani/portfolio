@@ -16,6 +16,8 @@ import meanswearHolder from 'assets/project-pics/menwears-cover.jpg';
 import atelierHolder from 'assets/project-pics/atelier-cover.jpg';
 import tunicHolder from 'assets/project-pics/tunic-cover.jpg';
 import taashiHolder from 'assets/project-pics/taashi-cover.jpg';
+import phonePlaceholder from 'assets/mobile-placeholder.jpg';
+import desktopPlaceholder from 'assets/desktop-placeholder.jpg';
 
 const disciplines = ['Entrepreneur', 'Traveller'];
 
@@ -178,17 +180,17 @@ const Home = () => {
         buttonLink="/projects/craft-docs"
         model={{
           type: 'phone',
-          alt: "Device Model's default image",
+          alt: 'Design Project Craft Based',
           textures: [
             {
               src: craftHolder,
               srcSet: `${craftHolder} 254w, ${craftHolder} 508w`,
-              placeholder: craftHolder,
+              placeholder: phonePlaceholder,
             },
             {
               src: craftHolder,
               srcSet: `${craftHolder} 254w, ${craftHolder} 508w`,
-              placeholder: craftHolder,
+              placeholder: phonePlaceholder,
             },
           ],
         }}
@@ -204,12 +206,12 @@ const Home = () => {
         buttonLink="/projects/menswear"
         model={{
           type: 'laptop',
-          alt: 'DevTech Tools Landing Page',
+          alt: 'Menswear',
           textures: [
             {
               src: meanswearHolder,
               srcSet: `${meanswearHolder} 800w, ${meanswearHolder} 1440w`,
-              placeholder: meanswearHolder,
+              placeholder: desktopPlaceholder,
             },
           ],
         }}
@@ -225,17 +227,17 @@ const Home = () => {
         buttonLink="/projects/atelier"
         model={{
           type: 'phone',
-          alt: "Device Model's default image",
+          alt: 'Atelier',
           textures: [
             {
               src: atelierHolder,
               srcSet: `${atelierHolder} 254w, ${atelierHolder} 508w`,
-              placeholder: atelierHolder,
+              placeholder: phonePlaceholder,
             },
             {
               src: atelierHolder,
               srcSet: `${atelierHolder} 254w, ${atelierHolder} 508w`,
-              placeholder: atelierHolder,
+              placeholder: phonePlaceholder,
             },
           ],
         }}
@@ -251,12 +253,12 @@ const Home = () => {
         buttonLink="/projects/tunic"
         model={{
           type: 'laptop',
-          alt: 'DevTech Tools Landing Page',
+          alt: 'Tunic',
           textures: [
             {
               src: tunicHolder,
               srcSet: `${tunicHolder} 800w, ${tunicHolder} 1440w`,
-              placeholder: tunicHolder,
+              placeholder: desktopPlaceholder,
             },
           ],
         }}
@@ -272,17 +274,17 @@ const Home = () => {
         buttonLink="/projects/taashi"
         model={{
           type: 'phone',
-          alt: "Device Model's default image",
+          alt: 'Taashi',
           textures: [
             {
               src: taashiHolder,
               srcSet: `${taashiHolder} 254w, ${taashiHolder} 508w`,
-              placeholder: taashiHolder,
+              placeholder: phonePlaceholder,
             },
             {
               src: taashiHolder,
               srcSet: `${taashiHolder} 254w, ${taashiHolder} 508w`,
-              placeholder: taashiHolder,
+              placeholder: phonePlaceholder,
             },
           ],
         }}

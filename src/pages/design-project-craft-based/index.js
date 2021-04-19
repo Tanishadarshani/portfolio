@@ -19,7 +19,7 @@ import deviceModelsBackground from 'assets/device-models-background.jpg';
 import deviceModelsBackgroundLarge from 'assets/device-models-background-large.jpg';
 import deviceModelsBackgroundPlaceholder from 'assets/device-models-background-placeholder.jpg';
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
-import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
+import projectPlaceholder from 'assets/project-placeholder.jpg';
 
 import image0 from 'assets/project-pics/craft-doc/0.jpg';
 import image1 from 'assets/project-pics/craft-doc/1.jpg';
@@ -86,97 +86,97 @@ const CraftDocs = () => {
           <ProjectTextRow>
             <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image2} 400w, ${image2} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image3} 400w, ${image3} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image4} 400w, ${image4} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image5} 400w, ${image6} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image7} 400w, ${image8} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image9} 400w, ${image9} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image10} 400w, ${image11} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image11} 400w, ${image11} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image12} 400w, ${image12} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image13} 400w, ${image13} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image14} 400w, ${image14} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image15} 400w, ${image15} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image16} 400w, ${image16} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image17} 400w, ${image17} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image18} 400w, ${image18} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />

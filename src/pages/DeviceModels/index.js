@@ -29,7 +29,7 @@ import deviceModelsLarge from 'assets/device-models-large.jpg';
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
 import deviceModelsBranding from 'assets/device-models-branding.png';
 import deviceModelsBrandingLarge from 'assets/device-models-branding-large.png';
-import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
+import projectPlaceholder from 'assets/device-models-branding-placeholder.png';
 import deviceModelsBanner from 'assets/device-models-banner.jpg';
 import deviceModelsBannerLarge from 'assets/device-models-banner-large.jpg';
 import deviceModelsBannerPlaceholder from 'assets/device-models-banner-placeholder.jpg';
@@ -98,7 +98,7 @@ const ProjectDM = () => {
           <ProjectTextRow>
             <Image
               srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
@@ -108,7 +108,7 @@ const ProjectDM = () => {
           <ProjectTextRow>
             <Image
               srcSet={`${deviceModelsBranding} 400w, ${deviceModelsBrandingLarge} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />

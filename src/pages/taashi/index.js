@@ -11,6 +11,8 @@ import {
   ProjectSectionContent,
   ProjectImage,
   ProjectTextRow,
+  ProjectSectionHeading,
+  ProjectSectionText,
 } from 'components/ProjectLayout';
 import { useTheme } from 'components/ThemeProvider';
 import { useAppContext, useScrollRestore } from 'hooks';
@@ -20,7 +22,6 @@ import deviceModelsBackground from 'assets/device-models-background.jpg';
 import deviceModelsBackgroundLarge from 'assets/device-models-background-large.jpg';
 import deviceModelsBackgroundPlaceholder from 'assets/device-models-background-placeholder.jpg';
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
-import deviceModelsBrandingPlaceholder from 'assets/device-models-branding-placeholder.png';
 
 import image0 from 'assets/project-pics/taashi2/0.jpg';
 import image1 from 'assets/project-pics/taashi2/1.jpg';
@@ -29,6 +30,8 @@ import image3 from 'assets/project-pics/taashi2/3.jpg';
 import image4 from 'assets/project-pics/taashi2/4.jpg';
 import image5 from 'assets/project-pics/taashi2/5.jpg';
 import image6 from 'assets/project-pics/taashi2/6.jpg';
+import projectPlaceholder from 'assets/project-placeholder.jpg';
+import Link from 'components/Link';
 
 const title = 'Taashi';
 const description =
@@ -75,40 +78,51 @@ const Taashi = () => {
           <ProjectTextRow>
             <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image2} 400w, ${image2} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image3} 400w, ${image3} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image4} 400w, ${image4} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image5} 400w, ${image5} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
               srcSet={`${image6} 400w, ${image6} 898w`}
-              placeholder={deviceModelsBrandingPlaceholder}
+              placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
+          </ProjectTextRow>
+        </ProjectSection>
+        <ProjectSection>
+          <ProjectTextRow>
+            <ProjectSectionHeading>Visit Taashi</ProjectSectionHeading>
+            <ProjectSectionText>
+              Interested in knowing more about the brand? <br />
+              <Link href="https://instagram.com/taashi_in?igshid=1w4le4wbyloj0">
+                Here's the link to the Instagram Page
+              </Link>
+            </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
       </ProjectContainer>
