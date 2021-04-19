@@ -109,13 +109,25 @@ const CraftDocs = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image5} 400w, ${image6} 898w`}
+              srcSet={`${image5} 400w, ${image5} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image7} 400w, ${image8} 898w`}
+              srcSet={`${image6} 400w, ${image6} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image7} 400w, ${image7} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image8} 400w, ${image8} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
@@ -127,7 +139,7 @@ const CraftDocs = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image10} 400w, ${image11} 898w`}
+              srcSet={`${image10} 400w, ${image10} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
