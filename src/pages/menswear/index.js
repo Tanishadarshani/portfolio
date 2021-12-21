@@ -21,7 +21,6 @@ import deviceModelsBackgroundPlaceholder from 'assets/device-models-background-p
 import deviceModelsPlaceholder from 'assets/device-models-placeholder.jpg';
 import projectPlaceholder from 'assets/project-placeholder.jpg';
 
-import image0 from 'assets/project-pics/menswear/0.jpg';
 import image1 from 'assets/project-pics/menswear/1.jpg';
 import image2 from 'assets/project-pics/menswear/2.jpg';
 import image3 from 'assets/project-pics/menswear/3.jpg';
@@ -43,8 +42,6 @@ import image18 from 'assets/project-pics/menswear/18.jpg';
 import image19 from 'assets/project-pics/menswear/19.jpg';
 import image20 from 'assets/project-pics/menswear/20.jpg';
 import image21 from 'assets/project-pics/menswear/21.jpg';
-import image22 from 'assets/project-pics/menswear/22.jpg';
-import image23 from 'assets/project-pics/menswear/23.jpg';
 
 const title = 'Menswear';
 const description =
@@ -77,24 +74,10 @@ const Menswear = () => {
         />
         <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection first>
-          <ProjectSectionContent>
-            <ProjectImage
-              raised
-              srcSet={`${image23} 1280w, ${image23} 2560w`}
-              placeholder={deviceModelsPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="Device Models plugin interface."
-            />
-          </ProjectSectionContent>
+          <ProjectSectionContent></ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light>
           <ProjectTextRow>
-            <Image
-              srcSet={`${image0} 400w, ${image0} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
             <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
               placeholder={projectPlaceholder}
@@ -161,6 +144,10 @@ const Menswear = () => {
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
+            <br />
+            <br />
+            <br />
+            <br />
             <Image
               srcSet={`${image12} 400w, ${image12} 898w`}
               placeholder={projectPlaceholder}
@@ -217,12 +204,6 @@ const Menswear = () => {
             />
             <Image
               srcSet={`${image21} 400w, ${image21} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image22} 400w, ${image22} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

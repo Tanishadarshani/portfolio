@@ -25,6 +25,9 @@ const Atelier = lazy(() => import('pages/atelier'));
 const Menswear = lazy(() => import('pages/menswear'));
 const Taashi = lazy(() => import('pages/taashi'));
 const Tunic = lazy(() => import('pages/tunic'));
+const Initiative = lazy(() => import('pages/self-initiative'));
+const Spencer = lazy(() => import('pages/spencer'));
+const Suketdhir = lazy(() => import('pages/suketdhir'));
 
 export const AppContext = createContext();
 export const TransitionContext = createContext();
@@ -89,6 +92,10 @@ const AppRoutes = () => {
                     <Route path="/projects/menswear" component={Menswear} />
                     <Route path="/projects/taashi" component={Taashi} />
                     <Route path="/projects/tunic" component={Tunic} />
+                    <Route path="/projects/self-initiative" component={Initiative} />
+                    <Route path="/projects/mark-spencer" component={Spencer} />
+                    <Route path="/projects/suketdhir" component={Suketdhir} />
+
                     <Route path="/uses" component={Uses} />
                     <Route component={Page404} />
                   </Switch>

@@ -40,6 +40,17 @@ import image15 from 'assets/project-pics/craft-doc/15.jpg';
 import image16 from 'assets/project-pics/craft-doc/16.jpg';
 import image17 from 'assets/project-pics/craft-doc/17.jpg';
 import image18 from 'assets/project-pics/craft-doc/18.jpg';
+import image19 from 'assets/project-pics/craft-doc/19.jpg';
+import image20 from 'assets/project-pics/craft-doc/20.jpg';
+import image21 from 'assets/project-pics/craft-doc/21.jpg';
+import image22 from 'assets/project-pics/craft-doc/22.jpg';
+import image23 from 'assets/project-pics/craft-doc/23.jpg';
+import image24 from 'assets/project-pics/craft-doc/24.jpg';
+import image25 from 'assets/project-pics/craft-doc/25.jpg';
+import image26 from 'assets/project-pics/craft-doc/26.jpg';
+import image27 from 'assets/project-pics/craft-doc/27.jpg';
+import image28 from 'assets/project-pics/craft-doc/28.jpg';
+import image29 from 'assets/project-pics/craft-doc/29.jpg';
 
 const title = 'Design Project - Craft Based';
 const description =
@@ -72,15 +83,7 @@ const CraftDocs = () => {
         />
         <ProjectHeader title={title} description={description} roles={roles} />
         <ProjectSection first>
-          <ProjectSectionContent>
-            <ProjectImage
-              raised
-              srcSet={`${image0} 1280w, ${image0} 2560w`}
-              placeholder={deviceModelsPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="Device Models plugin interface."
-            />
-          </ProjectSectionContent>
+          <ProjectSectionContent></ProjectSectionContent>
         </ProjectSection>
         <ProjectSection light>
           <ProjectTextRow>
@@ -188,6 +191,72 @@ const CraftDocs = () => {
             />
             <Image
               srcSet={`${image18} 400w, ${image18} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image19} 400w, ${image19} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image20} 400w, ${image20} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image21} 400w, ${image21} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image22} 400w, ${image22} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image23} 400w, ${image23} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image24} 400w, ${image24} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image25} 400w, ${image25} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image26} 400w, ${image26} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image27} 400w, ${image27} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image28} 400w, ${image28} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image29} 400w, ${image28} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

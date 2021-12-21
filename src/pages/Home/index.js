@@ -16,6 +16,9 @@ import meanswearHolder from 'assets/project-pics/menwears-cover.jpg';
 import atelierHolder from 'assets/project-pics/atelier-cover.jpg';
 import tunicHolder from 'assets/project-pics/tunic-cover.jpg';
 import taashiHolder from 'assets/project-pics/taashi-cover.jpg';
+import spencerHolder from 'assets/project-pics/spencer-cover.jpg';
+import initiativeHolder from 'assets/project-pics/initiative-cover.jpg';
+import suketdhirHolder from 'assets/project-pics/suketdhir-cover.jpg';
 import phonePlaceholder from 'assets/mobile-placeholder.jpg';
 import desktopPlaceholder from 'assets/desktop-placeholder.jpg';
 
@@ -33,6 +36,9 @@ const Home = () => {
   const projectThree = useRef();
   const projectFour = useRef();
   const projectFive = useRef();
+  const projectSix = useRef();
+  const projectSeven = useRef();
+  const projectEight = useRef();
   const about = useRef();
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -44,6 +50,9 @@ const Home = () => {
       projectThree,
       projectFour,
       projectFive,
+      projectSix,
+      projectSeven,
+      projectEight,
       about,
     ];
 
@@ -95,6 +104,9 @@ const Home = () => {
         projectThree,
         projectFour,
         projectFive,
+        projectSix,
+        projectSeven,
+        projectEight,
         about,
       ];
       const hashString = hash.replace('#', '');
@@ -200,6 +212,55 @@ const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
+        title="Design for brand (high fashion brand) - Suketdhir"
+        description="In this project we had to study and create unique patterns based of Suketdhir's clothing"
+        buttonText="View Project"
+        buttonLink="/projects/suketdhir"
+        model={{
+          type: 'laptop',
+          alt: 'Suketdhir',
+          textures: [
+            {
+              src: suketdhirHolder,
+              srcSet: `${suketdhirHolder} 800w, ${suketdhirHolder} 1440w`,
+              placeholder: desktopPlaceholder,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-3"
+        alternate
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
+        title="Design for brand (high street brand)- Mark & Spencer"
+        description="In this project we had to study and create unique patterns based of Mark & Spencer's clothing "
+        buttonText="View Project"
+        buttonLink="/projects/mark-spencer"
+        model={{
+          type: 'phone',
+          alt: 'Design for brand (high street brand)- Mark & Spencer',
+          textures: [
+            {
+              src: spencerHolder,
+              srcSet: `${spencerHolder} 254w, ${spencerHolder} 508w`,
+              placeholder: phonePlaceholder,
+            },
+            {
+              src: spencerHolder,
+              srcSet: `${spencerHolder} 254w, ${spencerHolder} 508w`,
+              placeholder: phonePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
         title="Menswear"
         description="In this Project my inspiration was the sculptural artist name Erwin Wurm. The design process was taken by the concept of everyday objects in our daily life."
         buttonText="View Project"
@@ -217,10 +278,37 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
+        alternate
+        title="Special Needs"
+        description="In this project we had to create adaptive clothing for those children who have sensory processing concerns."
+        buttonText="View Project"
+        buttonLink="/projects/self-initiative"
+        model={{
+          type: 'phone',
+          alt: 'Special Needs',
+          textures: [
+            {
+              src: initiativeHolder,
+              srcSet: `${initiativeHolder} 254w, ${initiativeHolder} 508w`,
+              placeholder: phonePlaceholder,
+            },
+            {
+              src: initiativeHolder,
+              srcSet: `${initiativeHolder} 254w, ${initiativeHolder} 508w`,
+              placeholder: phonePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-6"
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
         title="Atelier"
         description="Atelier means a workshop or a studio meant especially for the artist, designer or fashion house. It focuses on couture, tailoring techniques, being creative with both patterns and as well as fabrication."
         buttonText="View Project"
@@ -243,10 +331,10 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-4"
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
-        index={4}
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={7}
         title="Tunic"
         description="My M.O for this was to choose a famous monument and design something in its inspiration. I chose the Taj Mahal for this project."
         buttonText="View Project"
@@ -264,10 +352,10 @@ const Home = () => {
         }}
       />
       <ProjectSummary
-        id="project-5"
-        sectionRef={projectFive}
-        visible={visibleSections.includes(projectFive.current)}
-        index={5}
+        id="project-8"
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectEight.current)}
+        index={8}
         title="Taashi"
         description="Building my own fashion brand whose aim is to provide stylish clothes to people with affordability in mind."
         buttonText="View Project"
