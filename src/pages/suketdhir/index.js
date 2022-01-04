@@ -76,10 +76,13 @@ import image52 from 'assets/project-pics/suketdhir/52.jpg';
 import image53 from 'assets/project-pics/suketdhir/53.jpg';
 import image54 from 'assets/project-pics/suketdhir/54.jpg';
 import image55 from 'assets/project-pics/suketdhir/55.jpg';
+import image56 from 'assets/project-pics/suketdhir/56.jpg';
+import image57 from 'assets/project-pics/suketdhir/57.jpg';
+import image58 from 'assets/project-pics/suketdhir/58.jpg';
 
-const title = 'Design for brand (high fashion brand) - Suketdhir';
+const title = 'Design for brand (high fashion brand)';
 const description =
-  "In this project we had to study and create unique patterns based of Suketdhir's clothing";
+  "In this project we had to study and create unique patterns based of Suketdhir's brand.";
 const roles = ['Prints', 'Surface Techniques', 'Print Analysis'];
 
 const Suketdhir = () => {
@@ -281,7 +284,7 @@ const Suketdhir = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image29} 400w, ${image28} 898w`}
+              srcSet={`${image29} 400w, ${image29} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
@@ -401,7 +404,7 @@ const Suketdhir = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 4D allure."
             />
             <Image
-              srcSet={`${image49} 400w, ${image39} 898w`}
+              srcSet={`${image49} 400w, ${image49} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
@@ -425,7 +428,7 @@ const Suketdhir = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image53} 400w, ${image43} 898w`}
+              srcSet={`${image53} 400w, ${image53} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
@@ -438,6 +441,24 @@ const Suketdhir = () => {
             />
             <Image
               srcSet={`${image55} 400w, ${image55} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image56} 400w, ${image56} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image57} 400w, ${image57} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image58} 400w, ${image58} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

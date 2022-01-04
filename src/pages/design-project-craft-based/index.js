@@ -51,6 +51,12 @@ import image26 from 'assets/project-pics/craft-doc/26.jpg';
 import image27 from 'assets/project-pics/craft-doc/27.jpg';
 import image28 from 'assets/project-pics/craft-doc/28.jpg';
 import image29 from 'assets/project-pics/craft-doc/29.jpg';
+import image30 from 'assets/project-pics/craft-doc/30.jpg';
+import image31 from 'assets/project-pics/craft-doc/31.jpg';
+import image32 from 'assets/project-pics/craft-doc/32.jpg';
+import image33 from 'assets/project-pics/craft-doc/33.jpg';
+import image34 from 'assets/project-pics/craft-doc/34.jpg';
+import image35 from 'assets/project-pics/craft-doc/35.jpg';
 
 const title = 'Design Project - Craft Based';
 const description =
@@ -256,7 +262,43 @@ const CraftDocs = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image29} 400w, ${image28} 898w`}
+              srcSet={`${image29} 400w, ${image29} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image30} 400w, ${image30} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image31} 400w, ${image31} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image32} 400w, ${image32} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image33} 400w, ${image33} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image34} 400w, ${image34} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image35} 400w, ${image35} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

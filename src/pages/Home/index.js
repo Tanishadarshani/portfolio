@@ -186,7 +186,7 @@ const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Design Project Craft Based"
+        title="Craft Based Design Project"
         description="In this project we had to get inspired by any Indian Art or Craft. I chose Rogan Art as my inspiration. So for that I had to visit a small village in Bhuj, Gujarat named Nirona. Where Rogan Art is practised. "
         buttonText="View Project"
         buttonLink="/projects/craft-docs"

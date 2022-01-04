@@ -79,6 +79,70 @@ const Menswear = () => {
         <ProjectSection light>
           <ProjectTextRow>
             <Image
+              srcSet={`${image12} 400w, ${image12} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image13} 400w, ${image13} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image14} 400w, ${image14} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image15} 400w, ${image15} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image16} 400w, ${image16} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image17} 400w, ${image17} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image18} 400w, ${image18} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image19} 400w, ${image19} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image20} 400w, ${image20} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image21} 400w, ${image21} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
@@ -140,70 +204,6 @@ const Menswear = () => {
             />
             <Image
               srcSet={`${image11} 400w, ${image11} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <br />
-            <br />
-            <br />
-            <br />
-            <Image
-              srcSet={`${image12} 400w, ${image12} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image13} 400w, ${image13} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image14} 400w, ${image14} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image15} 400w, ${image15} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image16} 400w, ${image16} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image17} 400w, ${image17} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image18} 400w, ${image18} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image19} 400w, ${image19} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image20} 400w, ${image20} 898w`}
-              placeholder={projectPlaceholder}
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
-              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
-            />
-            <Image
-              srcSet={`${image21} 400w, ${image21} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

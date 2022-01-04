@@ -67,6 +67,7 @@ import image43 from 'assets/project-pics/initiative/43.jpg';
 import image44 from 'assets/project-pics/initiative/44.jpg';
 import image45 from 'assets/project-pics/initiative/45.jpg';
 import image46 from 'assets/project-pics/initiative/46.jpg';
+import image47 from 'assets/project-pics/initiative/002.jpg';
 
 const title = 'Special Needs - Self Initiative';
 const description =
@@ -105,6 +106,12 @@ const Initiative = () => {
           <ProjectTextRow>
             <Image
               srcSet={`${image1} 400w, ${image1} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image47} 400w, ${image47} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."

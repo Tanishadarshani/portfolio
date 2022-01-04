@@ -61,10 +61,11 @@ import image37 from 'assets/project-pics/spencer/37.jpg';
 import image38 from 'assets/project-pics/spencer/38.jpg';
 import image39 from 'assets/project-pics/spencer/39.jpg';
 import image40 from 'assets/project-pics/spencer/40.jpg';
+import image41 from 'assets/project-pics/spencer/41.jpg';
 
-const title = 'Design for brand (high street brand)- Mark & Spencer';
+const title = 'Design for brand (high street brand)';
 const description =
-  "In this project we had to study and create unique patterns based of Mark & Spencer's clothing ";
+  "In this project we had to study and create unique patterns based of Mark & Spencer's brand. ";
 const roles = ['Prints', 'Surface Techniques', 'Print Analysis'];
 
 const Spencer = () => {
@@ -266,7 +267,7 @@ const Spencer = () => {
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
             />
             <Image
-              srcSet={`${image29} 400w, ${image28} 898w`}
+              srcSet={`${image29} 400w, ${image29} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
@@ -333,6 +334,12 @@ const Spencer = () => {
             />
             <Image
               srcSet={`${image40} 400w, ${image40} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image41} 400w, ${image41} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
