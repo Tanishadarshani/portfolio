@@ -57,6 +57,7 @@ import image32 from 'assets/project-pics/craft-doc/32.jpg';
 import image33 from 'assets/project-pics/craft-doc/33.jpg';
 import image34 from 'assets/project-pics/craft-doc/34.jpg';
 import image35 from 'assets/project-pics/craft-doc/35.jpg';
+import image36 from 'assets/project-pics/craft-doc/36.jpg';
 
 const title = 'Design Project - Craft Based';
 const description =
@@ -299,6 +300,12 @@ const CraftDocs = () => {
             />
             <Image
               srcSet={`${image35} 400w, ${image35} 898w`}
+              placeholder={projectPlaceholder}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
+              alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
+            />
+            <Image
+              srcSet={`${image36} 400w, ${image36} 898w`}
               placeholder={projectPlaceholder}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 50vw`}
               alt="The Device Models color palette and logo, featuring a low poly monogram to convey its 3D allure."
