@@ -69,7 +69,7 @@ import image45 from 'assets/project-pics/initiative/45.jpg';
 import image46 from 'assets/project-pics/initiative/46.jpg';
 import image47 from 'assets/project-pics/initiative/002.jpg';
 
-const title = 'Special Needs - Self Initiative';
+const title = 'Self Initiative (Special Needs)';
 const description =
   'In this project we had to create adaptive clothing for those children who have sensory processing concerns.  ';
 const roles = ['Sensory Clothing', 'Autism', 'Children Clothing'];
