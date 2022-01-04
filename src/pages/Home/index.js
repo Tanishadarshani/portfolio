@@ -212,8 +212,8 @@ const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Design for brand (high fashion brand) - Suketdhir"
-        description="In this project we had to study and create unique patterns based of Suketdhir's clothing"
+        title="Design for brand (high fashion brand)"
+        description="In this project we had to study and create unique patterns based of Suketdhir's brand."
         buttonText="View Project"
         buttonLink="/projects/suketdhir"
         model={{
@@ -235,8 +235,8 @@ const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Design for brand (high street brand)- Mark & Spencer"
-        description="In this project we had to study and create unique patterns based of Mark & Spencer's clothing "
+        title="Design for brand (high street brand)"
+        description="In this project we had to study and create unique patterns based of Mark & Spencer's brand."
         buttonText="View Project"
         buttonLink="/projects/mark-spencer"
         model={{
