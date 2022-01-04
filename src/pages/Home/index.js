@@ -283,13 +283,13 @@ const Home = () => {
         visible={visibleSections.includes(projectFive.current)}
         index={5}
         alternate
-        title="Special Needs"
+        title="Self Initiative (Special Needs)"
         description="In this project we had to create adaptive clothing for those children who have sensory processing concerns."
         buttonText="View Project"
         buttonLink="/projects/self-initiative"
         model={{
           type: 'phone',
-          alt: 'Special Needs',
+          alt: 'self initiative ( special needs ) ',
           textures: [
             {
               src: initiativeHolder,
